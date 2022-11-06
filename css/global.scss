@@ -1,0 +1,11 @@
+@use 'var' as *;
+
+body {
+	background: $colorDarkBlue;
+	color: $colorWhite;
+	font-family: 'Rubik', sans-serif;
+	min-width: 320px;
+}
+img {
+	max-width: 100%;
+}
