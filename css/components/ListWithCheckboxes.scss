@@ -1,0 +1,17 @@
+@use '../var' as *;
+
+.ListWithCheckboxes {
+	@include fontBaseRegular;
+	list-style: none;
+	margin: 0;
+	padding: 0 40px;
+	&-item {
+		background-image: url('/img/checkbox.svg');
+		background-position: top right;
+		background-repeat: no-repeat;
+		padding-right: 32px;
+		& + & {
+			margin-top: 20px;
+		}
+	}
+}
