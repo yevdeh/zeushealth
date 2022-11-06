@@ -1,0 +1,23 @@
+.Section {
+	padding: 0 16px;
+	&-wrapper {
+		margin: auto;
+		max-width: 500px;
+	}
+	&--home {
+		background-image: url('/img/home-background.jpg');
+		background-size: cover;
+		height: 100vh;
+		min-height: 650px;
+		padding-bottom: 60px;
+		padding-top: 64px;
+		text-align: center;
+
+	}
+	&--home &-wrapper {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+}

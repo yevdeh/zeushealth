@@ -1,0 +1,41 @@
+@use '../var' as *;
+
+.PageHome {
+	&-advice {
+		@include fontMicroRegular;
+		margin-bottom: 40px;
+	}
+	&-button {
+		margin-bottom: 14px;
+	}
+	&-description {
+		@include fontMicroRegular;
+		margin-bottom: auto;
+	}
+	&-footer {
+		@include fontMicroRegular;
+	}
+	&-footerAnd {
+		color: $colorGrey;
+		margin: 0 4px;
+	}
+	&-footerLink {
+		color: $colorWhite;
+		text-decoration: underline;
+		&:hover {
+			color: $colorWhite;
+		}
+	}
+	&-logo {
+		margin-bottom: auto;
+	}
+	&-proposition {
+		@include fontTitle1Medium;
+		margin-bottom: auto;
+		padding-bottom: 40px;
+	}
+	&-title {
+		@include fontBaseSemibold;
+		margin-bottom: 5px;
+	}
+}
