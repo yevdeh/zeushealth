@@ -1,0 +1,25 @@
+{
+  "browserslist": [
+    "last 4 versions"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "browser-sync": "^2.26.13",
+    "cssnano": "^4.1.10",
+    "onchange": "^7.1.0",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.0",
+    "uglify-js": "^3.12.4"
+  },
+  "scripts": {
+    "autoprefixer": "postcss -u autoprefixer -r build/index.css",
+    "minCss": "postcss -u cssnano -r build/index.css --no-map",
+    "minJs": "uglifyjs js/index.js -cmo build/index.js",
+    "reload": "browser-sync -s . -f build",
+    "sass": "sass css/index.scss build/index.css",
+    "watchCss": "onchange 'css/**/*.scss' -- npm run sass",
+    "watchJs": "onchange 'js/index.js' -- cp js/index.js build",
+    "dev": "npm run sass && npm run watchCss & npm run watchJs & npm run reload",
+    "prod": "npm run sass && npm run autoprefixer && npm run minCss && npm run minJs"
+  }
+}
