@@ -3,7 +3,7 @@
 .Button {
 	@include fontBaseSemibold;
 	align-items: center;
-	background: linear-gradient(264.94deg, #fb2724 4.56%, #f86d41 96.51%);
+	background: $gradientOrange;
 	border: none;
 	border-radius: 40px;
 	box-shadow: 5px 5px 15px rgba(3, 3, 19, 0.25);

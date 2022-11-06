@@ -2,6 +2,8 @@ $colorDarkBlue: #121429;
 $colorGrey: #6d6f88;
 $colorWhite: #fff;
 
+$gradientOrange: linear-gradient(264.94deg, #fb2724 4.56%, #f86d41 96.51%);
+
 @mixin fontBaseSemibold {
 	font-size: 16px;
 	font-weight: 600;
