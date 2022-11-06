@@ -1,0 +1,29 @@
+@use '../var' as *;
+
+.PageDownload {
+	text-align: center;
+	&-appPreview {
+		margin-bottom: 10px;
+		width: 343px;
+	}
+	&-appstore {
+		margin-bottom: 30px;
+		width: 120px;
+	}
+	&-button {
+		margin-bottom: 10px;
+	}
+	&-list {
+		margin-bottom: 40px;
+		text-align: left;
+	}
+	&-promise {
+		@include fontSmallRegular;
+		color: $colorOrange;
+		margin-bottom: 30px;
+	}
+	&-summary {
+		@include fontMicroRegular;
+		color: $colorGrey;
+	}
+}
