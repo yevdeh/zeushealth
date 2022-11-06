@@ -1,5 +1,13 @@
+@use '../var' as *;
+
 .Section {
-	padding: 0 16px;
+	min-height: 100vh;
+	padding: 0 16px 40px;
+	&-title {
+		@include fontTitle1Medium;
+		margin-bottom: 40px;
+		text-align: center;
+	}
 	&-wrapper {
 		margin: auto;
 		max-width: 500px;
@@ -12,12 +20,32 @@
 		padding-bottom: 60px;
 		padding-top: 64px;
 		text-align: center;
-
 	}
 	&--home &-wrapper {
 		align-items: center;
 		display: flex;
 		flex-direction: column;
 		height: 100%;
+	}
+	&--step1 {
+		padding-top: 44px;
+	}
+	&--withOrangeShadow {
+		overflow: hidden;
+		position: relative;
+		&::before {
+			background: $gradientOrangeRed;
+			content: '';
+			filter: blur(192.945px);
+			height: 366.46px;
+			left: calc(100% - 52px);
+			position: absolute;
+			top: 229.92px;
+			transform: rotate(-21.88deg);
+			width: 198.39px;
+		}
+	}
+	&--withOrangeShadow &-wrapper {
+		position: relative;
 	}
 }

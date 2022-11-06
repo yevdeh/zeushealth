@@ -1,0 +1,55 @@
+@use '../var' as *;
+
+.Option {
+	align-items: center;
+	background: none;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 4px 4px 10px rgba(3, 3, 19, 0.2);
+	display: flex;
+	overflow: hidden;
+	padding: 15px 20px;
+	position: relative;
+	text-align: left;
+	width: 100%;
+	&-icon {
+		height: auto;
+		margin: 3px 20px 3px 0;
+		width: 36px;
+		z-index: 1;
+	}
+	&-text {
+		@include fontBaseSemibold;
+		color: $colorWhite;
+		z-index: 1;
+	}
+	&::after {
+		background: $gradientBlueRedLight;
+		border-radius: 10px;
+		content: '';
+		height: calc(100% - 2px);
+		left: 1px;
+		position: absolute;
+		top: 1px;
+		width: calc(100% - 2px);
+	}
+	&::before {
+		content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+	}
+	&:hover, &:active {
+		&::before {
+			background: $gradientOrangeRed;
+		}
+	}
+	&:focus {
+		outline: none;
+	}
+	& + & {
+		margin-top: 14px;
+	}
+}

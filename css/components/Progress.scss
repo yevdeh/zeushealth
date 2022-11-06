@@ -1,0 +1,39 @@
+@use '../var' as *;
+
+.Progress {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 73px;
+	&-back {
+		background: url('/img/icons/arrow.svg');
+		border: none;
+		height: 24px;
+		width: 24px;
+	}
+	&-logo {
+		margin: auto;
+		width: 29px;
+	}
+	&-pages {
+		@include fontBaseRegular;
+	}
+	&-step {
+		background: $colorDarkGrey;
+		border-radius: 4px;
+		flex-basis: 0;
+		flex-grow: 1;
+		height: 3px;
+		&:nth-child(2) {
+			margin: 0 6px;
+		}
+		&--active {
+			background: $colorWhite;
+		}
+	}
+	&-steps {
+		display: flex;
+		margin-top: 7px;
+		width: 100%;
+	}
+}

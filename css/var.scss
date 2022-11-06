@@ -1,9 +1,16 @@
 $colorDarkBlue: #121429;
+$colorDarkGrey: #393c59;
 $colorGrey: #6d6f88;
 $colorWhite: #fff;
 
+$gradientBlueRedLight: linear-gradient(82.48deg, #21243f 3.98%, #3b293e 94.48%);
 $gradientOrangeRed: linear-gradient(264.94deg, #fb2724 4.56%, #f86d41 96.51%);
 
+@mixin fontBaseRegular {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.5;
+}
 @mixin fontBaseSemibold {
 	font-size: 16px;
 	font-weight: 600;
