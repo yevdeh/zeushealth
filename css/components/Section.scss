@@ -24,10 +24,7 @@
 		padding-bottom: 60px;
 		padding-top: 64px;
 	}
-	&--step {
-		padding-top: 44px;
-	}
-	&--withOrangeShadow {
+	&--isWithOrangeShadow {
 		overflow: hidden;
 		position: relative;
 		&::before {
@@ -41,5 +38,8 @@
 			transform: rotate(-21.88deg);
 			width: 198.39px;
 		}
+	}
+	&--step {
+		padding-top: 44px;
 	}
 }
