@@ -1,6 +1,7 @@
 @use '../var' as *;
 
 .Section {
+	display: none;
 	min-height: 100vh;
 	padding: 0 16px 40px;
 	&-title {
@@ -23,6 +24,9 @@
 		background-size: cover;
 		padding-bottom: 60px;
 		padding-top: 64px;
+	}
+	&--isActive {
+		display: block;
 	}
 	&--isWithOrangeShadow {
 		overflow: hidden;
