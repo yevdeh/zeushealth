@@ -29,7 +29,7 @@
 		}
 	}
 
-	on(document.querySelectorAll('.Progress-back'), goPrevPage)
+	on(document.querySelectorAll('.Navigation-back'), goPrevPage)
 
 	on(document.querySelectorAll('#SectionHome .Button'), goNextPage)
 
