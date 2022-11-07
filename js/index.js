@@ -2,6 +2,7 @@
 	var classSectionIsActive = 'Section--isActive'
 
 	var $sectionAnalyzing = document.getElementById('SectionAnalyzing')
+	var $sectionDownload = document.getElementById('SectionDownload')
 	var $sectionHome = document.getElementById('SectionHome')
 	var $sectionStep1 = document.getElementById('SectionStep1')
 	var $sectionStep2 = document.getElementById('SectionStep2')
@@ -51,5 +52,12 @@
 	on($step3Options, function () {
 		$sectionStep3.classList.remove(classSectionIsActive)
 		$sectionAnalyzing.classList.add(classSectionIsActive)
+		setTimeout(function () {
+			document.querySelector('.ListWithCheckboxes').classList.add('ListWithCheckboxes--animated')
+			setTimeout(function () {
+				$sectionAnalyzing.classList.remove(classSectionIsActive)
+				$sectionDownload.classList.add(classSectionIsActive)
+			}, 5000);
+		}, 500);
 	})
 }())
