@@ -1,6 +1,9 @@
 @use '../var' as *;
 
-.PageHome {
+.SectionHome {
+	height: 100vh;
+	min-height: 650px;
+	text-align: center;
 	&-advice {
 		@include fontMicroRegular;
 		margin-bottom: 40px;
@@ -11,6 +14,12 @@
 	&-description {
 		@include fontMicroRegular;
 		margin-bottom: auto;
+	}
+	&-flexContainer {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 	}
 	&-footer {
 		@include fontMicroRegular;
