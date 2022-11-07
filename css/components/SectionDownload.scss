@@ -1,6 +1,6 @@
 @use '../var' as *;
 
-.PageDownload {
+.SectionDownload {
 	text-align: center;
 	&-appPreview {
 		margin-bottom: 10px;
@@ -27,5 +27,8 @@
 	&-summary {
 		@include fontMicroRegular;
 		color: $colorGrey;
+	}
+	&-title {
+		margin-bottom: 10px;
 	}
 }
