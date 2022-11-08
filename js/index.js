@@ -37,6 +37,7 @@
 
 	on(document.querySelectorAll('#SectionStep3 .Option'), function () {
 		setTimeout(function () {
+			document.querySelector('.SectionAnalyzing-loader').play()
 			document.querySelector('.ListWithCheckboxes').classList.add('ListWithCheckboxes--animated')
 			setTimeout(goNextPage, 5000);
 		}, 500);
