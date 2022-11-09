@@ -29,23 +29,7 @@
 		display: block;
 	}
 	&--isWithOrangeShadow {
-		overflow: hidden;
-		position: relative;
-		&::before {
-			background: $gradientOrangeRed;
-			content: '';
-			filter: blur(192.945px);
-			height: 366.46px;
-			left: calc(100% - 52px);
-			position: absolute;
-			top: 229.92px;
-			transform: rotate(-21.88deg);
-			width: 198.39px;
-			// hack to detect Apple device
-			@supports (-webkit-overflow-scrolling: touch) {
-				backdrop-filter: blur(192.945px);
-			}
-		}
+		background: url('/img/orange-shadow.png') no-repeat top right / 375px 812px;
 	}
 	&--step {
 		padding-top: 44px;
