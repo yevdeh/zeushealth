@@ -41,6 +41,10 @@
 			top: 229.92px;
 			transform: rotate(-21.88deg);
 			width: 198.39px;
+			// hack to detect Apple device
+			@supports (-webkit-overflow-scrolling: touch) {
+				backdrop-filter: blur(192.945px);
+			}
 		}
 	}
 	&--step {
