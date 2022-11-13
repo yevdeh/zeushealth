@@ -9,8 +9,8 @@
 	box-shadow: 5px 5px 15px rgba(3, 3, 19, 0.25);
 	color: $colorWhite;
 	display: flex;
-	justify-content: center;
 	height: 58px;
+	justify-content: center;
 	width: 100%;
 	&-smallText {
 		@include fontMicroRegular;
