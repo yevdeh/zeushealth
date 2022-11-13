@@ -23,16 +23,14 @@
 		border-radius: 4px;
 		flex: 1;
 		height: 3px;
-		&:nth-child(2) {
-			margin: 0 6px;
-		}
 		&--active {
 			background: $colorWhite;
 		}
 	}
 	&-steps {
 		display: flex;
+		flex: 100%;
+		gap: 6px;
 		margin-top: 7px;
-		width: 100%;
 	}
 }
