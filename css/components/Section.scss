@@ -20,7 +20,7 @@
 		padding-top: 84px;
 	}
 	&--home {
-		background: url('/img/home-background.jpg') 0 0 / cover;
+		background: url(/img/home-background.jpg) 0 0 / cover;
 		padding-bottom: 60px;
 		padding-top: 64px;
 	}
@@ -28,7 +28,7 @@
 		display: block;
 	}
 	&--isWithOrangeShadow {
-		background: url('/img/orange-shadow.png') no-repeat top right / 375px;
+		background: url(/img/orange-shadow.png) no-repeat top right / 375px;
 	}
 	&--step {
 		padding-top: 44px;

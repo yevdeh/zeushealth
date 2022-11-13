@@ -12,7 +12,7 @@
 			display: inline-block;
 		}
 		&::before {
-			background: url('/img/icons/checkbox.svg') 50% / cover;
+			background: url(/img/icons/checkbox.svg) 50% / cover;
 			content: '';
 			height: 24px;
 			opacity: 0;
