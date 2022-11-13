@@ -5,8 +5,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	&-back {
-		background: url('/img/icons/arrow.svg');
-		background-repeat: no-repeat;
+		background: url('/img/icons/arrow.svg') no-repeat;
 		border: none;
 		height: 24px;
 		padding: 0;
@@ -22,8 +21,7 @@
 	&-step {
 		background: $colorDarkGrey;
 		border-radius: 4px;
-		flex-basis: 0;
-		flex-grow: 1;
+		flex: 1;
 		height: 3px;
 		&:nth-child(2) {
 			margin: 0 6px;
