@@ -1,5 +1,5 @@
 # Install
-`mkdir -p favicon img/icons && npm install`
+`mkdir -p img/favicons img/icons && npm install`
 
 # Build dev
 `npm run dev`
