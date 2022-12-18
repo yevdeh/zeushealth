@@ -4,7 +4,6 @@
 	@include fontBaseSemibold;
 	align-items: center;
 	background: $gradientOrangeRed;
-	border: none;
 	border-radius: 29px;
 	box-shadow: 5px 5px 15px rgba(3, 3, 19, 0.25);
 	color: $colorWhite;
@@ -15,9 +14,5 @@
 	&-smallText {
 		@include fontMicroRegular;
 		display: block;
-	}
-	&:hover {
-		color: inherit;
-		text-decoration: none;
 	}
 }

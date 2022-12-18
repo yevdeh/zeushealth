@@ -2,8 +2,6 @@
 
 .Option {
 	align-items: center;
-	background: none;
-	border: none;
 	border-radius: 10px;
 	box-shadow: 4px 4px 10px rgba(3, 3, 19, 0.2);
 	display: flex;
@@ -45,9 +43,6 @@
 		&::before {
 			background: $gradientOrangeRed;
 		}
-	}
-	&:focus {
-		outline: none;
 	}
 	& + & {
 		margin-top: 14px;
