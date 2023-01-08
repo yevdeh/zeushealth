@@ -3,9 +3,9 @@
 	var classSectionIsActive = 'Section--isActive'
 	var sections = [
 		document.getElementById('SectionHome'),
-		document.getElementById('SectionStep1'),
-		document.getElementById('SectionStep2'),
-		document.getElementById('SectionStep3'),
+		document.getElementById('SectionQuiz1'),
+		document.getElementById('SectionQuiz2'),
+		document.getElementById('SectionQuiz3'),
 		document.getElementById('SectionAnalyzing'),
 		document.getElementById('SectionDownload'),
 	]
@@ -35,7 +35,7 @@
 
 	on(document.querySelectorAll('.Option'), goNextPage)
 
-	on(document.querySelectorAll('#SectionStep3 .Option'), function () {
+	on(document.querySelectorAll('#SectionQuiz3 .Option'), function () {
 		setTimeout(function () {
 			document.querySelector('.SectionAnalyzing-loader').play()
 			document.querySelector('.ListWithCheckboxes').classList.add('ListWithCheckboxes--animated')
