@@ -28,6 +28,11 @@ $gradientOrangeRed: linear-gradient(264.94deg, #fb2724 4.56%, #f86d41 96.51%);
 	font-weight: 400;
 	line-height: 1.2;
 }
+@mixin fontSmallLight {
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 1.2;
+}
 @mixin fontSmallRegular {
 	font-size: 14px;
 	font-weight: 400;

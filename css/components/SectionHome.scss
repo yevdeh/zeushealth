@@ -5,11 +5,19 @@
 	min-height: 650px;
 	text-align: center;
 	&-advice {
-		@include fontMicroRegular;
-		margin-bottom: 40px;
+		&--pageHardcore {
+			@include fontSmallLight;
+			margin-bottom: auto;
+		}
+		&--pageMain {
+			@include fontMicroRegular;
+			margin-bottom: 40px;
+		}
 	}
 	&-button {
-		margin-bottom: 14px;
+		&--pageMain {
+			margin-bottom: 14px;
+		}
 	}
 	&-description {
 		@include fontMicroRegular;
@@ -36,15 +44,32 @@
 		}
 	}
 	&-logo {
-		margin-bottom: auto;
+		&--pageMain {
+			margin-bottom: auto;
+			width: 72px;
+		}
+		&--pageHardcore {
+			margin-bottom: 50px;
+			width: 100px;
+		}
 	}
 	&-proposition {
 		@include fontTitle1Medium;
-		margin-bottom: auto;
-		padding-bottom: 40px;
+		&--pageHardcore {
+			margin-bottom: 20px;
+		}
+		&--pageMain {
+			margin-bottom: auto;
+			padding-bottom: 40px;
+		}
 	}
 	&-title {
 		@include fontBaseSemibold;
-		margin-bottom: 5px;
+		&--pageHardcore {
+			margin-bottom: auto;
+		}
+		&--pageMain {
+			margin-bottom: 5px;
+		}
 	}
 }
