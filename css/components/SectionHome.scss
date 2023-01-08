@@ -5,17 +5,17 @@
 	min-height: 650px;
 	text-align: center;
 	&-advice {
-		&--pageHardcore {
+		&--quizHardcore {
 			@include fontSmallLight;
 			margin-bottom: auto;
 		}
-		&--pageMain {
+		&--quizMain {
 			@include fontMicroRegular;
 			margin-bottom: 40px;
 		}
 	}
 	&-button {
-		&--pageMain {
+		&--quizMain {
 			margin-bottom: 14px;
 		}
 	}
@@ -44,31 +44,31 @@
 		}
 	}
 	&-logo {
-		&--pageMain {
-			margin-bottom: auto;
-			width: 72px;
-		}
-		&--pageHardcore {
+		&--quizHardcore {
 			margin-bottom: 50px;
 			width: 100px;
+		}
+		&--quizMain {
+			margin-bottom: auto;
+			width: 72px;
 		}
 	}
 	&-proposition {
 		@include fontTitle1Medium;
-		&--pageHardcore {
+		&--quizHardcore {
 			margin-bottom: 20px;
 		}
-		&--pageMain {
+		&--quizMain {
 			margin-bottom: auto;
 			padding-bottom: 40px;
 		}
 	}
 	&-title {
 		@include fontBaseSemibold;
-		&--pageHardcore {
+		&--quizHardcore {
 			margin-bottom: auto;
 		}
-		&--pageMain {
+		&--quizMain {
 			margin-bottom: 5px;
 		}
 	}
