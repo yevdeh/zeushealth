@@ -1,0 +1,12 @@
+@use '../var' as *;
+
+.SectionResults {
+	&-dangerIcon {
+		display: block;
+		margin: auto;
+		width: 142px;
+	}
+	&-title {
+		margin-bottom: 0;
+	}
+}

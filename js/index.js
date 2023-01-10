@@ -25,7 +25,7 @@
 		'SectionQuiz14',
 		'SectionQuiz15',
 		'SectionAnalyzing',
-		'SectionDownload',
+		'SectionResults',
 	]
 	var quizType = document.body.dataset.quizType
 	var sections = quizType === 'main' ? sectionsMain : sectionsHardcore
