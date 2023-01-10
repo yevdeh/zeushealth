@@ -1,24 +1,48 @@
 (function () {
+	var sectionsMain = [
+		'SectionHome',
+		'SectionQuiz1',
+		'SectionQuiz2',
+		'SectionQuiz3',
+		'SectionAnalyzing',
+		'SectionDownload',
+	]
+	var sectionsHardcore = [
+		'SectionHome',
+		'SectionQuiz1',
+		'SectionQuiz2',
+		'SectionQuiz3',
+		'SectionQuiz4',
+		'SectionQuiz5',
+		'SectionQuiz6',
+		'SectionQuiz7',
+		'SectionQuiz8',
+		'SectionQuiz9',
+		'SectionQuiz10',
+		'SectionQuiz11',
+		'SectionQuiz12',
+		'SectionQuiz13',
+		'SectionQuiz14',
+		'SectionQuiz15',
+		'SectionAnalyzing',
+		'SectionDownload',
+	]
+	var quizType = document.body.dataset.quizType
+	var sections = quizType === 'main' ? sectionsMain : sectionsHardcore
+	var lastSectionSelector = quizType === 'main' ? '#SectionQuiz3' : '#SectionQuiz15'
+	var $sections = sections.map(function(sectionId) { return document.getElementById(sectionId) })
 	var activeSectionId = 0
 	var classSectionIsActive = 'Section--isActive'
-	var sections = [
-		document.getElementById('SectionHome'),
-		document.getElementById('SectionQuiz1'),
-		document.getElementById('SectionQuiz2'),
-		document.getElementById('SectionQuiz3'),
-		document.getElementById('SectionAnalyzing'),
-		document.getElementById('SectionDownload'),
-	]
 
 	function goNextPage() {
-		sections[activeSectionId].classList.remove(classSectionIsActive)
-		sections[activeSectionId + 1].classList.add(classSectionIsActive)
+		$sections[activeSectionId].classList.remove(classSectionIsActive)
+		$sections[activeSectionId + 1].classList.add(classSectionIsActive)
 		activeSectionId += 1
 	}
 
 	function goPrevPage() {
-		sections[activeSectionId].classList.remove(classSectionIsActive)
-		sections[activeSectionId - 1].classList.add(classSectionIsActive)
+		$sections[activeSectionId].classList.remove(classSectionIsActive)
+		$sections[activeSectionId - 1].classList.add(classSectionIsActive)
 		activeSectionId -= 1
 	}
 
@@ -35,7 +59,7 @@
 
 	on(document.querySelectorAll('.Option'), goNextPage)
 
-	on(document.querySelectorAll('#SectionQuiz3 .Option'), function () {
+	on(document.querySelectorAll(lastSectionSelector + ' .Option'), function () {
 		setTimeout(function () {
 			document.querySelector('.SectionAnalyzing-loader').play()
 			document.querySelector('.ListWithCheckboxes').classList.add('ListWithCheckboxes--animated')

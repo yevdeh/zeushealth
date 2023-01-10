@@ -1,5 +1,16 @@
+@use '../var' as *;
+
 .SectionQuiz {
 	&-navigation {
 		margin-bottom: 73px;
+	}
+	&-WHO {
+		@include fontBaseLight;
+		display: flex;
+		padding-top: 67px;
+		img {
+			margin-right: 20px;
+			width: 54px;
+		}
 	}
 }
