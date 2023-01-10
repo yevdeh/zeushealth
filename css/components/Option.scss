@@ -1,11 +1,13 @@
 @use '../var' as *;
 
 .Option {
+	@include fontBaseSemibold;
 	align-items: center;
+	background: $gradientBlueRedLight;
 	border-radius: 10px;
 	box-shadow: 4px 4px 10px rgba(3, 3, 19, 0.2);
+	color: $colorWhite;
 	display: flex;
-	overflow: hidden;
 	padding: 18px 20px;
 	position: relative;
 	text-align: left;
@@ -14,32 +16,19 @@
 		height: auto;
 		margin-right: 20px;
 		width: 36px;
-		z-index: 1;
-	}
-	&-text {
-		@include fontBaseSemibold;
-		color: $colorWhite;
-		z-index: 1;
-	}
-	&::after {
-		background: $gradientBlueRedLight;
-		border-radius: 10px;
-		content: '';
-		height: calc(100% - 2px);
-		left: 1px;
-		position: absolute;
-		top: 1px;
-		width: calc(100% - 2px);
 	}
 	&::before {
+		border-radius: 10px;
 		content: '';
-		height: 100%;
-		left: 0;
+		height: calc(100% + 2px);
+		left: -1px;
 		position: absolute;
-		top: 0;
-		width: 100%;
+		top: -1px;
+		width: calc(100% + 2px);
+		z-index: -1;
 	}
-	&:hover, &:active {
+	&:hover, &:active, &:focus {
+		outline: none;
 		&::before {
 			background: $gradientOrangeRed;
 		}
