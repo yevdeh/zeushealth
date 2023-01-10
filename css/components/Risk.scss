@@ -1,0 +1,38 @@
+@use '../var' as *;
+
+.Risk {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	&-bar {
+		border-radius: 10px;
+		height: 6px;
+		margin-top: 8px;
+		overflow: hidden;
+		position: relative;
+		width: 100%;
+		&::before {
+			background: $colorBrown;
+			content: '';
+			height: 100%;
+			opacity: 0.4;
+			position: absolute;
+			width: 100%;
+		}
+	}
+	&-barFilled {
+		@include keyframesProgressBar;
+		animation: progress-bar 2s;
+		background: $colorRed;
+		height: 100%;
+		position: absolute;
+	}
+	&-name {
+		@include fontBaseRegular;
+		margin-right: auto;
+	}
+	&-value {
+		@include fontTitle1Medium;
+		color: $colorRed;
+	}
+}

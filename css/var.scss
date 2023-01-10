@@ -1,12 +1,14 @@
+$colorBrown: #765c6c;
 $colorDarkBlue: #121429;
 $colorDarkGrey: #393c59;
 $colorGrey: #6d6f88;
 $colorOrange: #f86d41;
+$colorRed: #fb2724;
 $colorWhite: #fff;
 
 $gradientBlueRedLight: linear-gradient(82.48deg, #21243f 3.98%, #3b293e 94.48%);
-$gradientListItem: linear-gradient(239.47deg, #fb2724 4.67%, #f84541 83.56%);
-$gradientOrangeRed: linear-gradient(264.94deg, #fb2724 4.56%, #f86d41 96.51%);
+$gradientListItem: linear-gradient(239.47deg, $colorRed 4.67%, #f84541 83.56%);
+$gradientOrangeRed: linear-gradient(264.94deg, $colorRed 4.56%, $colorOrange 96.51%);
 
 @mixin fontBaseLight {
 	font-size: 16px;
@@ -42,4 +44,12 @@ $gradientOrangeRed: linear-gradient(264.94deg, #fb2724 4.56%, #f86d41 96.51%);
 	font-size: 24px;
 	font-weight: 500;
 	line-height: 1.18;
+}
+
+@mixin keyframesProgressBar {
+	@keyframes progress-bar {
+		0% {
+			width: 0;
+		}
+	}
 }
