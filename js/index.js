@@ -101,6 +101,13 @@
 				if (quizType === 'hardcore-with-risks') {
 					fillRisks()
 				}
+				if (quizType === 'hardcore-with-images') {
+					setTimeout(function () {
+						document.querySelectorAll('.Images-image').forEach(function (e) {
+							e.classList.add('Images-image--visible')
+						})
+					}, 100);
+				}
 			}, 5000);
 		}, 500);
 	})
