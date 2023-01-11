@@ -1,6 +1,9 @@
 @use '../var' as *;
 
 .SectionHome {
+	background: url(/img/home-background-2x.jpg) 0 0 / cover;
+	padding-bottom: 60px;
+	padding-top: 64px;
 	text-align: center;
 	&-advice {
 		&--quizHardcore {

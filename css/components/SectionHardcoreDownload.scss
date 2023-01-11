@@ -1,6 +1,7 @@
 @use '../var' as *;
 
 .SectionHardcoreDownload {
+	padding-top: 150px;
 	text-align: center;
 	&-logo {
 		background: url(/img/icons/logo-download.svg) 0 0 / contain no-repeat;

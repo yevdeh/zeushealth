@@ -22,30 +22,10 @@
 			height: 100%;
 		}
 	}
-	&--analyzing {
-		padding-top: 100px;
-	}
-	&--download {
-		padding-top: 84px;
-	}
-	&--hardcoreDownload {
-		padding-top: 150px;
-	}
-	&--home {
-		background: url(/img/home-background-2x.jpg) 0 0 / cover;
-		padding-bottom: 60px;
-		padding-top: 64px;
-	}
 	&--isActive {
 		display: block;
 	}
 	&--isWithOrangeShadow {
 		background: url(/img/orange-shadow-2x.png) no-repeat top right / 375px;
-	}
-	&--quiz {
-		padding-top: 44px;
-	}
-	&--results {
-		padding-top: 84px;
 	}
 }
