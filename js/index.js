@@ -32,17 +32,17 @@
 	var lastSectionSelector = quizType === 'main' ? '#SectionQuiz3' : '#SectionQuiz15'
 	var $sections = sections.map(function (sectionId) { return document.getElementById(sectionId) })
 	var activeSectionId = 0
-	var classSectionIsActive = 'Section--isActive'
+	var classSectionActive = 'Section--active'
 
 	function goNextPage() {
-		$sections[activeSectionId].classList.remove(classSectionIsActive)
-		$sections[activeSectionId + 1].classList.add(classSectionIsActive)
+		$sections[activeSectionId].classList.remove(classSectionActive)
+		$sections[activeSectionId + 1].classList.add(classSectionActive)
 		activeSectionId += 1
 	}
 
 	function goPrevPage() {
-		$sections[activeSectionId].classList.remove(classSectionIsActive)
-		$sections[activeSectionId - 1].classList.add(classSectionIsActive)
+		$sections[activeSectionId].classList.remove(classSectionActive)
+		$sections[activeSectionId - 1].classList.add(classSectionActive)
 		activeSectionId -= 1
 	}
 

@@ -13,6 +13,9 @@
 		margin: auto;
 		max-width: 500px;
 	}
+	&--active {
+		display: block;
+	}
 	&--fullHeight {
 		height: 100vh;
 		min-height: 650px;
@@ -22,10 +25,7 @@
 			height: 100%;
 		}
 	}
-	&--isActive {
-		display: block;
-	}
-	&--isWithOrangeShadow {
+	&--withOrangeShadow {
 		background: url(/img/orange-shadow-2x.png) no-repeat top right / 375px;
 	}
 }
