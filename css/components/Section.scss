@@ -13,6 +13,15 @@
 		margin: auto;
 		max-width: 500px;
 	}
+	&--fullHeight {
+		height: 100vh;
+		min-height: 650px;
+		.Section-wrapper {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+	}
 	&--analyzing {
 		padding-top: 100px;
 	}

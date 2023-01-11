@@ -1,14 +1,7 @@
 @use '../var' as *;
 
 .SectionHardcoreDownload {
-	height: 100vh;
 	text-align: center;
-	&-flexContainer {
-		align-items: center;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-	}
 	&-logo {
 		background: url(/img/icons/logo-download.svg) 0 0 / contain no-repeat;
 		margin: 0 auto auto;

@@ -1,8 +1,6 @@
 @use '../var' as *;
 
 .SectionHome {
-	height: 100vh;
-	min-height: 650px;
 	text-align: center;
 	&-advice {
 		&--quizHardcore {
@@ -23,12 +21,6 @@
 		@include fontMicroRegular;
 		margin-bottom: auto;
 	}
-	&-flexContainer {
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		height: 100%;
-	}
 	&-footer {
 		@include fontMicroRegular;
 	}
@@ -45,11 +37,11 @@
 	}
 	&-logo {
 		&--quizHardcore {
-			margin-bottom: 50px;
+			margin: 0 auto 50px;
 			width: 100px;
 		}
 		&--quizMain {
-			margin-bottom: auto;
+			margin: 0 auto auto;
 			width: 72px;
 		}
 	}
