@@ -15,4 +15,9 @@
 		@include fontMicroRegular;
 		display: block;
 	}
+	&--withIcon {
+		img {
+			margin-right: 5px;
+		}
+	}
 }
