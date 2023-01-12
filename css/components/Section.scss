@@ -2,30 +2,21 @@
 
 .Section {
 	display: none;
+	flex-direction: column;
 	min-height: 100vh;
-	padding: 0 16px 40px;
+	padding: 0 16px 60px;
 	&-title {
 		@include fontTitle1Medium;
 		margin-bottom: 40px;
 		text-align: center;
 	}
-	&-wrapper {
-		margin: auto;
-		max-width: 500px;
-	}
 	&--active {
-		display: block;
-	}
-	&--fullHeight {
-		height: 100vh;
-		min-height: 650px;
-		.Section-wrapper {
-			display: flex;
-			flex-direction: column;
-			height: 100%;
-		}
+		display: flex;
 	}
 	&--withOrangeShadow {
 		background: url(/img/orange-shadow-2x.png) no-repeat top right / 375px;
+	}
+	@media (min-width: 532px) {
+		padding: 0 calc((100% - 500px) / 2) 60px;
 	}
 }
