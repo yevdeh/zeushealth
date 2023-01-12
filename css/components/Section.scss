@@ -3,7 +3,7 @@
 .Section {
 	display: none;
 	flex-direction: column;
-	min-height: 100vh;
+	min-height: 100%;
 	padding: 0 16px 60px;
 	&-title {
 		@include fontTitle1Medium;

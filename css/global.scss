@@ -1,10 +1,14 @@
 @use 'var' as *;
 
+html {
+	height: 100%;
+}
 body {
 	background: $colorDarkBlue;
 	color: $colorWhite;
 	font-family: 'Rubik', sans-serif;
 	font-size: 16px;
+	height: 100%;
 	min-width: 320px;
 }
 a:hover {
@@ -18,4 +22,7 @@ button {
 }
 img {
 	max-width: 100%;
+}
+main {
+	height: 100%;
 }
