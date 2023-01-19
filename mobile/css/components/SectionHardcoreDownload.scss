@@ -5,8 +5,10 @@
 	text-align: center;
 	&-logo {
 		background: url(/img/icons/logo-download.svg) 0 0 / contain no-repeat;
-		margin: 0 auto auto;
+		box-sizing: content-box;
 		height: 170px;
+		margin: auto;
+		padding-bottom: 60px;
 		position: relative;
 		width: 170px;
 		&::before {
@@ -22,7 +24,6 @@
 	}
 	&-subtitle {
 		@include fontBaseRegular;
-		margin-bottom: 112px;
 	}
 	&-title {
 		margin-bottom: 10px;

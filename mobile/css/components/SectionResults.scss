@@ -1,18 +1,18 @@
 @use '../var' as *;
 
 .SectionResults {
-	padding-top: 84px;
 	&-dangerIcon {
 		display: block;
 		margin: auto;
 		width: 142px;
 	}
 	&-images {
-		margin-bottom: 70px;
-		margin-top: 66px;
+    margin-bottom: auto;
+		margin-top: auto;
+    padding: 30px 0;
 	}
 	&-risk {
-		margin-bottom: 40px;
+		margin-bottom: 30px;
 	}
 	&-title {
 		margin-bottom: 0;
