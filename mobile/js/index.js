@@ -35,26 +35,23 @@
 	var classSectionActive = 'Section--active'
 	var isNavigationBlocked = false
 
-	function goNextPage() {
+	function goToPage(direction) {
 		if (isNavigationBlocked) return
 		isNavigationBlocked = true
 		setTimeout(() => {
 			$sections[activeSectionId].classList.remove(classSectionActive)
-			$sections[activeSectionId + 1].classList.add(classSectionActive)
-			activeSectionId += 1
+			$sections[activeSectionId + direction].classList.add(classSectionActive)
+			activeSectionId += direction
 			isNavigationBlocked = false
 		}, 300);
 	}
 
+	function goNextPage() {
+		goToPage(1)
+	}
+
 	function goPrevPage() {
-		if (isNavigationBlocked) return
-		isNavigationBlocked = true
-		setTimeout(() => {
-			$sections[activeSectionId].classList.remove(classSectionActive)
-			$sections[activeSectionId - 1].classList.add(classSectionActive)
-			activeSectionId -= 1
-			isNavigationBlocked = false
-		}, 300);
+		goToPage(-1)
 	}
 
 	function getRandomInteger(min, max) {
