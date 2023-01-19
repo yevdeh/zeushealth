@@ -33,20 +33,27 @@
 	var $sections = sections.map(function (sectionId) { return document.getElementById(sectionId) })
 	var activeSectionId = 0
 	var classSectionActive = 'Section--active'
+	var isNavigationBlocked = false
 
 	function goNextPage() {
+		if (isNavigationBlocked) return
+		isNavigationBlocked = true
 		setTimeout(() => {
 			$sections[activeSectionId].classList.remove(classSectionActive)
 			$sections[activeSectionId + 1].classList.add(classSectionActive)
 			activeSectionId += 1
+			isNavigationBlocked = false
 		}, 300);
 	}
 
 	function goPrevPage() {
+		if (isNavigationBlocked) return
+		isNavigationBlocked = true
 		setTimeout(() => {
 			$sections[activeSectionId].classList.remove(classSectionActive)
 			$sections[activeSectionId - 1].classList.add(classSectionActive)
 			activeSectionId -= 1
+			isNavigationBlocked = false
 		}, 300);
 	}
 
