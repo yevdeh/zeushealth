@@ -35,15 +35,19 @@
 	var classSectionActive = 'Section--active'
 
 	function goNextPage() {
-		$sections[activeSectionId].classList.remove(classSectionActive)
-		$sections[activeSectionId + 1].classList.add(classSectionActive)
-		activeSectionId += 1
+		setTimeout(() => {
+			$sections[activeSectionId].classList.remove(classSectionActive)
+			$sections[activeSectionId + 1].classList.add(classSectionActive)
+			activeSectionId += 1
+		}, 300);
 	}
 
 	function goPrevPage() {
-		$sections[activeSectionId].classList.remove(classSectionActive)
-		$sections[activeSectionId - 1].classList.add(classSectionActive)
-		activeSectionId -= 1
+		setTimeout(() => {
+			$sections[activeSectionId].classList.remove(classSectionActive)
+			$sections[activeSectionId - 1].classList.add(classSectionActive)
+			activeSectionId -= 1
+		}, 300);
 	}
 
 	function getRandomInteger(min, max) {

@@ -19,6 +19,9 @@ button {
 	background: none;
 	border: 0;
 	padding: 0;
+	&:focus {
+		outline: none;
+	}
 }
 img {
 	max-width: 100%;
