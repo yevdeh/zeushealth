@@ -136,7 +136,7 @@
 						document.querySelectorAll('.Images-image').forEach(function (e) {
 							e.classList.add('Images-image--visible')
 						})
-					}, 100);
+					}, 400);
 				}
 			}, 5000);
 		}, 500);
