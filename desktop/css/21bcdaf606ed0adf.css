@@ -3388,7 +3388,7 @@ only screen and (min-width:1024px)and (min-width:1024px)and (min-device-pixel-ra
 	left: 2px;
 	width: 16px;
 	height: 16px;
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/checkmark-white.svg);
+	background-image: url(/img/checkmark-white.svg);
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: 9px 7px;

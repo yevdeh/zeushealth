@@ -1,3 +1,24 @@
+.selectable-card_isSelected__JQwCx .checkbox_checkbox__mYYOt+label:before {
+	width: 20px;
+	height: 20px;
+	border: none;
+	background: var(--primary300Color);
+}
+
+.selectable-card_isSelected__JQwCx .checkbox_checkbox__mYYOt+label:after {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	background-image: url(/img/checkmark-white.svg);
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-size: 9px 7px;
+	border-radius: 20px;
+	content: "";
+}
+
 @media (max-width: 1023px) {
 	.default-desktop-header-module_header__gI-i8 {
 		align-items: flex-end;
