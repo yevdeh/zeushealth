@@ -44,8 +44,9 @@
 		on(document.querySelectorAll('[data-card-id]'), function () {
 			this.classList.add('selectable-card_isSelected__JQwCx')
 			this.querySelector('article > span').classList.remove('quiz_isTransparent__3uLMZ')
-			setTimeout(() => {
-				window.location.href = '/quiz-' + nextPage + '.html'
+			setTimeout(function () {
+				href = page === 15 ? '/analyzing.html' : '/quiz-' + nextPage + '.html'
+				window.location.href = href
 			}, 1000);
 		})
 	}
