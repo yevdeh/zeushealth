@@ -1,3 +1,22 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.button-module_pulsing__2XkYM,
+.pulsing-button-ui_buttonUI__WbV8X {
+	display: inline-block;
+	text-align: center;
+	text-decoration: none;
+}
+
+.header-with-countdown-desktop_logo__aNd0B {
+	width: 35px;
+}
+
+.app-store-reviews_reviewExpandable__UCj2D {
+	max-height: initial;
+}
+
 .selectable-card_isSelected__JQwCx .checkbox_checkbox__mYYOt+label:before {
 	width: 20px;
 	height: 20px;
