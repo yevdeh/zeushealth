@@ -6,6 +6,17 @@
 		}
 	}
 
+	var ErrorPopup = (function () {
+		var closeElements = document.querySelectorAll('.ErrorPopup-close, .ErrorPopup-shadow, .ErrorPopup-button')
+		var popup = document.querySelector('.ErrorPopup')
+
+		function closePopup() {
+			popup.classList.add('ErrorPopup--hidden')
+		}
+
+		on(closeElements, closePopup)
+	}())
+
 	var Faq = (function () {
 		on(document.querySelectorAll('.faq-accordion_faqItem'), function () {
 			this.classList.toggle('faq-accordion_faqItem__8PP8i')
@@ -16,9 +27,13 @@
 	var Form = (function () {
 		var button = document.querySelector('.Form-button')
 		var inputs = document.querySelectorAll('.Form-input')
+		var popup = document.querySelector('.Popup')
+		var errorPopup = document.querySelector('.ErrorPopup')
 
 		button.addEventListener('click', function () {
 			if (!document.querySelectorAll('.Form-input:invalid').length) {
+				popup.classList.add('Popup--hidden')
+				errorPopup.classList.remove('ErrorPopup--hidden')
 			}
 		})
 
