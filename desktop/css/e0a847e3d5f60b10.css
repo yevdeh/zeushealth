@@ -740,15 +740,8 @@
 }
 
 .quiz_indicator__rRHEh {
-	margin-top: -20px;
-	margin-bottom: -20px
-}
-
-@media only screen and (min-width:1024px) {
-	.quiz_indicator__rRHEh {
-		margin-top: 0;
-		margin-bottom: 0
-	}
+	margin-top: 0;
+	margin-bottom: 0
 }
 
 .quiz_quizContainer__a99Gz {
