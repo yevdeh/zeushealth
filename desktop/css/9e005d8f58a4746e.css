@@ -338,7 +338,7 @@
 	width: 24px;
 	height: 24px;
 	background-color: var(--primary400Color);
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/question-white.svg);
+	background-image: url(/img/page-checkout/question-white.svg);
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: 12px 16px;

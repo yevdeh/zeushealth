@@ -295,7 +295,7 @@
 	left: 4px;
 	width: 12px;
 	height: 10px;
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/Combined_Shape_svfct8);
+	background-image: url(/img/checkmark-white.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: ""
@@ -2775,19 +2775,19 @@
 }
 
 .fitness-level-question_sliderButton__ucH3p.fitness-level-question_newbie__aegDp {
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/newbie/newbie-1x.png)
+	background-image: url('')
 }
 
 .fitness-level-question_sliderButton__ucH3p.fitness-level-question_medium__3d1uM {
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/medium/medium-1x.png)
+	background-image: url('')
 }
 
 .fitness-level-question_sliderButton__ucH3p.fitness-level-question_hard__WbTyE {
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/hard/hard-1x.png)
+	background-image: url('')
 }
 
 .fitness-level-question_sliderButton__ucH3p.fitness-level-question_pro__Ik1jL {
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/pro/pro-1x.png)
+	background-image: url('')
 }
 
 @media(-o-min-device-pixel-ratio:2/1),
@@ -2795,55 +2795,55 @@
 (min--moz-device-pixel-ratio:2),
 (min-device-pixel-ratio:2) {
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_newbie__aegDp {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/newbie/newbie-2x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_medium__3d1uM {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/medium/medium-2x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_hard__WbTyE {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/hard/hard-2x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_pro__Ik1jL {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/pro/pro-2x.png)
+		background-image: url('')
 	}
 }
 
 @media(min-device-pixel-ratio:3) {
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_newbie__aegDp {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/newbie/newbie-3x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_medium__3d1uM {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/medium/medium-3x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_hard__WbTyE {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/hard/hard-3x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_pro__Ik1jL {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/pro/pro-3x.png)
+		background-image: url('')
 	}
 }
 
 @media(min-device-pixel-ratio:4) {
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_newbie__aegDp {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/newbie/newbie-4x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_medium__3d1uM {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/medium/medium-4x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_hard__WbTyE {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/hard/hard-4x.png)
+		background-image: url('')
 	}
 
 	.fitness-level-question_sliderButton__ucH3p.fitness-level-question_pro__Ik1jL {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/public/images/pro/pro-4x.png)
+		background-image: url('')
 	}
 }
 

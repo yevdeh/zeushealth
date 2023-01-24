@@ -797,7 +797,7 @@
 
 @media only screen and (min-width:1024px) {
 	.additional-discount-compatibility-modal_modal__0Wyf4 {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,%20dpr_0.25/compatibility/Frame_q9dulh.svg), url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,%20dpr_0.25/compatibility/Frame_pzsekr.svg);
+		background-image: url(''), url('');
 		background-position: 100% 100%, 0 100%;
 		background-repeat: no-repeat;
 		background-size: 140px auto, 117px auto
@@ -809,7 +809,7 @@ only screen and (min-width:1024px)and (-webkit-min-device-pixel-ratio:2),
 only screen and (min-width:1024px)and (min--moz-device-pixel-ratio:2),
 only screen and (min-width:1024px)and (min-device-pixel-ratio:2) {
 	.additional-discount-compatibility-modal_modal__0Wyf4 {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.5/compatibility/Frame_q9dulh.svg), url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.5/compatibility/Frame_pzsekr.svg)
+		background-image: url(''), url('')
 	}
 }
 
@@ -818,7 +818,7 @@ only screen and (min-width:1024px)and (-webkit-min-device-pixel-ratio:3),
 only screen and (min-width:1024px)and (min--moz-device-pixel-ratio:3),
 only screen and (min-width:1024px)and (min-device-pixel-ratio:3) {
 	.additional-discount-compatibility-modal_modal__0Wyf4 {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.75/compatibility/Frame_q9dulh.svg), url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.75/compatibility/Frame_pzsekr.svg)
+		background-image: url(''), url('')
 	}
 }
 
@@ -827,13 +827,13 @@ only screen and (min-width:1024px)and (-webkit-min-device-pixel-ratio:4),
 only screen and (min-width:1024px)and (min--moz-device-pixel-ratio:4),
 only screen and (min-width:1024px)and (min-device-pixel-ratio:4) {
 	.additional-discount-compatibility-modal_modal__0Wyf4 {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_1/compatibility/Frame_q9dulh.svg), url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_1/compatibility/Frame_pzsekr.svg)
+		background-image: url(''), url('')
 	}
 }
 
 @media only screen and (min-width:1024px)and (min-width:1024px) {
 	.additional-discount-compatibility-modal_modal__0Wyf4 {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.25/compatibility/Frame_q9dulh.svg), url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.25/compatibility/Frame_pzsekr.svg)
+		background-image: url(''), url('')
 	}
 }
 
@@ -842,7 +842,7 @@ only screen and (min-width:1024px)and (min-width:1024px)and (-webkit-min-device-
 only screen and (min-width:1024px)and (min-width:1024px)and (min--moz-device-pixel-ratio:2),
 only screen and (min-width:1024px)and (min-width:1024px)and (min-device-pixel-ratio:2) {
 	.additional-discount-compatibility-modal_modal__0Wyf4 {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.5/compatibility/Frame_q9dulh.svg), url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.5/compatibility/Frame_pzsekr.svg)
+		background-image: url(''), url('')
 	}
 }
 
@@ -851,7 +851,7 @@ only screen and (min-width:1024px)and (min-width:1024px)and (-webkit-min-device-
 only screen and (min-width:1024px)and (min-width:1024px)and (min--moz-device-pixel-ratio:3),
 only screen and (min-width:1024px)and (min-width:1024px)and (min-device-pixel-ratio:3) {
 	.additional-discount-compatibility-modal_modal__0Wyf4 {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.75/compatibility/Frame_q9dulh.svg), url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_0.75/compatibility/Frame_pzsekr.svg)
+		background-image: url(''), url('')
 	}
 }
 
@@ -860,7 +860,7 @@ only screen and (min-width:1024px)and (min-width:1024px)and (-webkit-min-device-
 only screen and (min-width:1024px)and (min-width:1024px)and (min--moz-device-pixel-ratio:4),
 only screen and (min-width:1024px)and (min-width:1024px)and (min-device-pixel-ratio:4) {
 	.additional-discount-compatibility-modal_modal__0Wyf4 {
-		background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_1/compatibility/Frame_q9dulh.svg), url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/w_iw,dpr_1/compatibility/Frame_pzsekr.svg)
+		background-image: url(''), url('')
 	}
 }
 
@@ -1820,7 +1820,7 @@ only screen and (min-width:1024px)and (min-width:1024px)and (min-device-pixel-ra
 
 .progress-bar-with-text-below_circle__b6SPT.progress-bar-with-text-below_isPassedStep__KbFMM {
 	background-color: var(--primary400Color);
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/Combined_Shape_jsuagi);
+	background-image: url('');
 	background-position: 50%;
 	background-repeat: no-repeat;
 	content: ""
@@ -2502,7 +2502,7 @@ only screen and (min-width:1024px)and (min-width:1024px)and (min-device-pixel-ra
 
 .downsell-offer-modal_modal__3jCV5 {
 	background-color: var(--neutral100Color);
-	background-image: url(https://res.cloudinary.com/drhg6wpcy/image/upload/q_auto:eco/v1617811443/weightloss/backgrounds/downsell-popup-bg_te6gu4.svg);
+	background-image: url('');
 	background-size: cover
 }
 
