@@ -22,6 +22,7 @@
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700,800&amp;display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
 	<!-- fonts -->
 
 	<link rel="stylesheet" href="/css/84220ae6ff8fc7c9.css">
@@ -29,6 +30,7 @@
 	<link rel="stylesheet" href="/css/9e005d8f58a4746e.css">
 	<link rel="stylesheet" href="/css/bf5dc068cb1bd0de.css">
 	<link rel="stylesheet" href="/css/1.css">
+	<link rel="stylesheet" href="/css/checkout-popup.css">
 </head>
 
 <body style="background-color: rgb(20, 20, 24);">
@@ -866,6 +868,55 @@
 				</main>
 			</div>
 		</main>
+		<div class="Popup Popup--hidden">
+			<div class="Popup-shadow"></div>
+			<div class="Popup-window">
+				<img class="Popup-close" src="/img/close.svg">
+				<h2 class="Popup-title">Submit a secure payment</h2>
+				<div class="Popup-columns">
+					<div class="Popup-column">
+						<div class="Order">
+							<h2 class="Order-title">Your Order Summary</h2>
+							<ul class="Order-items">
+								<li class="Order-item">
+									Personalized Kegel Exercise Plan
+									<span class="Order-itemPrice">$30</span>
+								</li>
+								<li class="Order-item">
+									Value Added Tax
+									<span class="Order-itemPrice">$19.99</span>
+								</li>
+							</ul>
+							<div class="Order-total">
+								Total
+								<span class="Order-totalPrice">$49.99</span>
+							</div>
+						</div>
+					</div>
+					<div class="Popup-column">
+						<div class="Form">
+							<div class="Form-row">
+								<div class="Form-field">
+									<div class="Form-fieldLabel">Card number</div>
+									<input class="Form-input" pattern="\d{4}\s*\d{4}\s*\d{4}\s*\d{4}" placeholder="XXXX  XXXX  XXXX  XXXX " required>
+								</div>
+							</div>
+							<div class="Form-row">
+								<div class="Form-field Form-field--halfWidth">
+									<div class="Form-fieldLabel">Data</div>
+									<input class="Form-input" pattern="\d{2}\/\d{2}" placeholder="MM/YY" required>
+								</div>
+								<div class="Form-field Form-field--halfWidth">
+									<div class="Form-fieldLabel">CVC</div>
+									<input class="Form-input" pattern="\d{3}" placeholder="CVC" required>
+								</div>
+							</div>
+							<button class="Form-button Button Button--disabled">Continue</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 	<script src="/js/page-checkout.js"></script>
 </body>
