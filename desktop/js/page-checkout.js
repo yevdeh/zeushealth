@@ -32,8 +32,10 @@
 
 		button.addEventListener('click', function () {
 			if (!document.querySelectorAll('.Form-input:invalid').length) {
-				popup.classList.add('Popup--hidden')
-				errorPopup.classList.remove('ErrorPopup--hidden')
+				setTimeout(function() {
+					popup.classList.add('Popup--hidden')
+					errorPopup.classList.remove('ErrorPopup--hidden')
+				}, 1000);
 			}
 		})
 
