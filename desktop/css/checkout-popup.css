@@ -87,6 +87,12 @@
 	width: 320px;
 }
 
+@media(max-height: 590px) {
+	.ErrorPopup-image {
+		width: calc(80vh * 320/590);
+	}
+}
+
 .ErrorPopup-shadow {
 	background: #121429;
 	cursor: pointer;
@@ -114,16 +120,12 @@
 	display: flex;
 	flex-direction: column;
 	height: 570px;
-	padding: 25px 20px;
+	padding: 20px;
 	position: relative;
 	width: calc(100% - 20px);
 }
 
 @media(max-height: 590px) {
-	.ErrorPopup-image {
-		width: calc(80vh * 320/590);
-	}
-
 	.ErrorPopup-window {
 		height: calc(100% - 20px);
 		overflow: scroll;
@@ -263,6 +265,22 @@
 	right: 0;
 }
 
+/*
+440 (popup height)
++ 24 (close icon height)
++ 20 (distance between popup and close icon)
++ 10 (distance between window top and close icon)
++ 24 + 20 + 10 (the same for the popup's bottom)
+= 548
+*/
+@media(max-height: 548px) {
+	.Popup-close {
+		bottom: initial;
+		right: 20px;
+		top: 20px;
+	}
+}
+
 .Popup-column {
 	flex: 1;
 }
@@ -304,8 +322,60 @@
 	border-radius: 40px;
 	box-shadow: 5px 5px 25px rgba(3, 3, 19, 0.5);
 	color: #fff;
-	height: 441px;
-	padding: 50px 40px;
+	height: 440px;
+	padding: 20px;
 	position: relative;
-	width: 800px;
+	width: calc(100% - 20px);
+}
+
+@media(max-height: 460px) {
+	.Popup-window {
+		height: calc(100% - 20px) !important;
+		overflow: scroll;
+	}
+}
+
+@media(max-width: 750px) {
+	.Order-items {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+
+	.Order-title {
+		margin-bottom: 20px;
+	}
+
+	.Popup-columns {
+		flex-direction: column;
+	}
+
+	.Popup-column:first-child {
+		border: none;
+		padding: 0;
+	}
+
+	.Popup-column:last-child {
+		padding: 0;
+	}
+
+	.Popup-title {
+		margin-bottom: 20px;
+	}
+
+	.Popup-window {
+		height: auto;
+		overflow: scroll;
+	}
+}
+
+@media(min-width: 820px) {
+	.Popup-window {
+		width: 800px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.Popup-window {
+		padding: 50px 40px;
+	}
 }
