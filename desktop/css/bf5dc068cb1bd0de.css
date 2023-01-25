@@ -1046,7 +1046,14 @@
 	width: 100%;
 	padding: 18px 0 64px;
 	margin: auto;
-	background-color: var(--neutral100Color)
+	background-color: var(--neutral100Color);
+	display: none;
+}
+
+@media(min-width: 1024px) {
+	.checkout-banner-desktop_container__crh_N {
+		display: block;
+	}
 }
 
 .comparison-mobile_comparison__5FafB {
@@ -1058,6 +1065,12 @@
 	height: 448px;
 	justify-content: center;
 	margin: 0 auto
+}
+
+@media(min-width: 1024px) {
+	.comparison-mobile_comparison__5FafB {
+		display: none;
+	}
 }
 
 .comparison-mobile_comparisonImageLeft__txN2T,
