@@ -42,6 +42,8 @@
 }
 
 .ErrorPopup-button {
+	margin-top: auto;
+	max-width: 100%;
 	width: 343px;
 }
 
@@ -56,14 +58,32 @@
 	right: 0;
 }
 
+/*
+570 (popup height)
++ 24 (close icon height)
++ 20 (distance between popup and close icon)
++ 10 (distance between window top and close icon)
++ 24 + 20 + 10 (the same for the popup's bottom)
+= 678
+*/
+@media(max-height: 678px) {
+	.ErrorPopup-close {
+		bottom: initial;
+		right: 20px;
+		top: 20px;
+	}
+}
+
 .ErrorPopup-description {
 	font-size: 16px;
 	line-height: 150%;
 	margin-bottom: 10px;
+	text-align: center;
 }
 
 .ErrorPopup-image {
 	margin-bottom: 10px;
+	max-width: 100%;
 	width: 320px;
 }
 
@@ -93,10 +113,33 @@
 	color: #fff;
 	display: flex;
 	flex-direction: column;
-	height: 569px;
-	padding: 50px 40px;
+	height: 570px;
+	padding: 25px 20px;
 	position: relative;
-	width: 800px;
+	width: calc(100% - 20px);
+}
+
+@media(max-height: 590px) {
+	.ErrorPopup-image {
+		width: calc(80vh * 320/590);
+	}
+
+	.ErrorPopup-window {
+		height: calc(100% - 20px);
+		overflow: scroll;
+	}
+}
+
+@media(min-width: 820px) {
+	.ErrorPopup-window {
+		width: 800px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.ErrorPopup-window {
+		padding: 50px 40px;
+	}
 }
 
 .Form-button {
