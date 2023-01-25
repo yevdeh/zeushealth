@@ -46,6 +46,30 @@
 		}, 'input')
 	}())
 
+	var Header = (function () {
+		var mobileHeader = document.querySelector('.header_header__GQ14N')
+		var image = mobileHeader.querySelector('.header_logo__kdBk4')
+		var timer = mobileHeader.querySelector('.countdown-with-cta_container__ud_nT')
+
+		var minScrollY = 200
+		var isScrolledEnough = false
+
+		function handleScroll() {
+			if (window.scrollY > minScrollY && !isScrolledEnough) {
+				isScrolledEnough = true
+				image.classList.add('hidden')
+				timer.classList.remove('hidden')
+			}
+			if (window.scrollY <= minScrollY && isScrolledEnough) {
+				isScrolledEnough = false
+				image.classList.remove('hidden')
+				timer.classList.add('hidden')
+			}
+		}
+
+		document.addEventListener('scroll', handleScroll)
+	}())
+
 	var PlanCards = (function () {
 		var cards = document.querySelectorAll('.choose-plan-card-template-module_planCard__1zLoM')
 		var classSelected = 'choose-plan-card-template-module_isSelected__bTfwV'
@@ -101,7 +125,7 @@
 			var interval = setInterval(setTimer, 1000);
 		}
 
-		var timers = document.querySelectorAll('.countdown-with-cta_timeNumbers__vHbE7')
+		var timers = document.querySelectorAll('.countdown-with-cta_timeNumbers__vHbE7, .sticky-countdown-with-cta_countdownTimeUnit__JEZa_')
 		timers.forEach(function (timer) {
 			initTimer(timer)
 		})
