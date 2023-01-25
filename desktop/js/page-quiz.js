@@ -47,7 +47,7 @@
 			setTimeout(function () {
 				href = page === 15 ? '/analyzing.html' : '/quiz-' + nextPage + '.html'
 				window.location.href = href
-			}, 1000);
+			}, 500);
 		})
 	}
 }())
