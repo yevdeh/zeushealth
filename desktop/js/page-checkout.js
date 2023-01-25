@@ -77,27 +77,33 @@
 	}())
 
 	var Timer = (function () {
-		var timer = document.querySelector('.countdown-with-cta_timeNumbers__vHbE7')
-		var nodeMinutes = timer.querySelector('.minutes')
-		var nodeSeconds = timer.querySelector('.seconds')
-		var minutes = 10
-		var seconds = 0
+		function initTimer(nodeTimer) {
+			var nodeMinutes = nodeTimer.querySelector('.minutes')
+			var nodeSeconds = nodeTimer.querySelector('.seconds')
+			var minutes = 10
+			var seconds = 0
 
-		function setTimer() {
-			if (minutes === 0 && seconds === 0) {
-				clearInterval(interval)
-				return
+			function setTimer() {
+				if (minutes === 0 && seconds === 0) {
+					clearInterval(interval)
+					return
+				}
+				if (seconds) {
+					seconds -= 1
+				} else {
+					minutes -= 1
+					seconds = 59
+				}
+				nodeMinutes.textContent = minutes.toString().padStart(2, '0')
+				nodeSeconds.textContent = seconds.toString().padStart(2, '0')
 			}
-			if (seconds) {
-				seconds -= 1
-			} else {
-				minutes -= 1
-				seconds = 59
-			}
-			nodeMinutes.textContent = minutes.toString().padStart(2, '0')
-			nodeSeconds.textContent = seconds.toString().padStart(2, '0')
+
+			var interval = setInterval(setTimer, 1000);
 		}
 
-		var interval = setInterval(setTimer, 1000);
+		var timers = document.querySelectorAll('.countdown-with-cta_timeNumbers__vHbE7')
+		timers.forEach(function (timer) {
+			initTimer(timer)
+		})
 	}())
 }())
