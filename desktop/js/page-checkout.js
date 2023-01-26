@@ -32,6 +32,7 @@
 
 		button.addEventListener('click', function () {
 			if (!document.querySelectorAll('.Form-input:invalid').length) {
+				gtag('event', 'submit_credit_card')
 				setTimeout(function() {
 					popup.classList.add('Popup--hidden')
 					errorPopup.classList.remove('ErrorPopup--hidden')
