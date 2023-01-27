@@ -125,6 +125,15 @@
 	width: calc(100% - 20px);
 }
 
+.ErrorPopup-window::-webkit-scrollbar,
+.ErrorPopup-window::-webkit-scrollbar-corner,
+.ErrorPopup-window::-webkit-scrollbar-thumb,
+.ErrorPopup-window::-webkit-scrollbar-track,
+.ErrorPopup-window:hover::-webkit-scrollbar-thumb {
+	display: none;
+	scrollbar-width: none;
+}
+
 @media(max-height: 590px) {
 	.ErrorPopup-window {
 		height: calc(100% - 20px);
@@ -326,6 +335,15 @@
 	padding: 20px;
 	position: relative;
 	width: calc(100% - 20px);
+}
+
+.Popup-window::-webkit-scrollbar,
+.Popup-window::-webkit-scrollbar-corner,
+.Popup-window::-webkit-scrollbar-thumb,
+.Popup-window::-webkit-scrollbar-track,
+.Popup-window:hover::-webkit-scrollbar-thumb {
+	display: none;
+	scrollbar-width: none;
 }
 
 @media(max-height: 460px) {
