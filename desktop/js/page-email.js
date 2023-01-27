@@ -25,6 +25,7 @@
 		if (value === '' || !/\S+@\S+\.\S+/.test(value)) {
 			showError()
 		} else {
+			gtag('event', 'page_email_submit')
 			window.location.href = '/checkout.html'
 		}
 	})

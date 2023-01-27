@@ -37,6 +37,7 @@
 
 		button.addEventListener('click', function () {
 			if (selectedOptionsCount) {
+				gtag('event', 'page_quiz_' + page + '_go_next')
 				window.location.href = '/quiz-' + nextPage + '.html'
 			}
 		})
@@ -44,6 +45,7 @@
 		on(document.querySelectorAll('[data-card-id]'), function () {
 			this.classList.add('selectable-card_isSelected__JQwCx')
 			this.querySelector('article > span').classList.remove('quiz_isTransparent__3uLMZ')
+			gtag('event', 'page_quiz_' + page + '_go_next')
 			setTimeout(function () {
 				href = page === 15 ? '/analyzing.html' : '/quiz-' + nextPage + '.html'
 				window.location.href = href
