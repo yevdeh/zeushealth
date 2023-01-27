@@ -41,6 +41,9 @@
 		})
 
 		on(inputs, function () {
+			if (this.name === 'date' && /^\d\d$/.test(this.value)) {
+				this.value += '/'
+			}
 			if (this.checkValidity() && !document.querySelectorAll('.Form-input:invalid').length) {
 				button.classList.remove('Button--disabled')
 			} else {

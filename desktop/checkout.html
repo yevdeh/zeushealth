@@ -980,18 +980,18 @@
 							<div class="Form-row">
 								<div class="Form-field">
 									<div class="Form-fieldLabel">Card number</div>
-									<input class="Form-input" pattern="\d{4}\s*\d{4}\s*\d{4}\s*\d{4}"
+									<input class="Form-input" name="cardNumber" pattern="\d{4}\s*\d{4}\s*\d{4}\s*\d{4}"
 										placeholder="XXXX  XXXX  XXXX  XXXX " required>
 								</div>
 							</div>
 							<div class="Form-row">
 								<div class="Form-field Form-field--halfWidth">
-									<div class="Form-fieldLabel">Data</div>
-									<input class="Form-input" pattern="\d{2}\/\d{2}" placeholder="MM/YY" required>
+									<div class="Form-fieldLabel">Date</div>
+									<input class="Form-input" name="date" pattern="\d{2}\/\d{2}" placeholder="MM/YY" required>
 								</div>
 								<div class="Form-field Form-field--halfWidth">
 									<div class="Form-fieldLabel">CVC</div>
-									<input class="Form-input" pattern="\d{3}" placeholder="CVC" required>
+									<input class="Form-input" name="cvc" pattern="\d{3}" placeholder="CVC" required>
 								</div>
 							</div>
 							<button class="Form-button Button Button--disabled">Continue</button>
