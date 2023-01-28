@@ -54,7 +54,6 @@
 
 	var Header = (function () {
 		var mobileHeader = document.querySelector('.header_header__GQ14N')
-		var image = mobileHeader.querySelector('.header_logo__kdBk4')
 		var timer = mobileHeader.querySelector('.countdown-with-cta_container__ud_nT')
 
 		var minScrollY = 200
@@ -63,12 +62,10 @@
 		function handleScroll() {
 			if (window.scrollY > minScrollY && !isScrolledEnough) {
 				isScrolledEnough = true
-				image.classList.add('hidden')
 				timer.classList.remove('hidden')
 			}
 			if (window.scrollY <= minScrollY && isScrolledEnough) {
 				isScrolledEnough = false
-				image.classList.remove('hidden')
 				timer.classList.add('hidden')
 			}
 		}
