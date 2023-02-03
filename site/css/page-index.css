@@ -1,0 +1,149 @@
+.AppStore {
+	width: 120px;
+}
+.Benefit {
+	font-size: 14px;
+	line-height: 1.2;
+	padding-left: 18px;
+	position: relative;
+}
+.Benefit::before {
+	background: linear-gradient(264.94deg, #FB2724 4.56%, #F86D41 96.51%);
+	border-radius: 50%;
+	box-shadow: 5px 5px 15px rgba(18, 20, 41, 0.25);
+	content: '';
+	height: 8px;
+	left: 0;
+	position: absolute;
+	top: calc(50% - 5px);
+	width: 8px;
+}
+.Benefit:not(:last-of-type) {
+	margin-bottom: 5px;
+}
+.Benefits {
+	margin-bottom: 30px;
+	padding: 0 24px 0 34px;
+}
+.Description {
+	margin-bottom: 30px;
+	text-align: center;
+}
+.Description br {
+	display: none;
+}
+.Email {
+	color: #121429;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 1.2;
+	margin-top: 15px;
+	text-align: center;
+	width: 100%;
+}
+.LogoSlot {
+	align-self: center;
+	margin-top: -30px;
+	max-width: 80px;
+	width: 23.32%;
+}
+.Preview {
+	margin-bottom: 17px;
+	max-width: 263px;
+	width: 76.67%;
+}
+.QrCode {
+	display: none;
+}
+.Section {
+	padding: 40px 16px;
+}
+.Section-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: auto;
+	max-width: 550px;
+	width: 100%;
+}
+.Title {
+	color: #121429;
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 28px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+@media (min-width: 1312px) {
+	.AppStore {
+		width: 257px;
+	}
+	.Benefit {
+		font-size: 18px;
+		line-height: 140%;
+	}
+	.Benefits {
+		margin: 33px 0 0;
+		order: 1;
+		padding: 0;
+		width: 600px;
+	}
+	.Description {
+		font-size: 24px;
+		line-height: 140%;
+		margin-bottom: 50px;
+		text-align: left;
+		width: 644px;
+	}
+	.Description br {
+		display: block;
+	}
+	.Email {
+		font-size: 18px;
+		font-weight: 500;
+		line-height: 1.4;
+		margin-top: 50px;
+		order: 2;
+		text-align: left;
+	}
+	.Logo {
+		width: 160px;
+	}
+	.LogoSlot {
+		align-self: initial;
+		margin: 0 0 50px;
+		max-width: 100%;
+		order: -2;
+		width: 644px;
+	}
+	.Preview {
+		margin-bottom: -423.5px;
+		max-width: 100%;
+		order: -1;
+		width: 600px;
+	}
+	.QrCode {
+		display: block;
+		margin-right: 40px;
+		width: 150px;
+	}
+	.QrCodeAndAppStore {
+		align-items: center;
+		display: flex;
+		width: 644px;
+	}
+	.Section {
+		padding: 150px 16px;
+	}
+	.Section-wrapper {
+		justify-content: space-between;
+		max-width: 1280px;
+	}
+	.Title {
+		font-size: 54px;
+		line-height: 110%;
+		margin-bottom: 50px;
+		text-align: left;
+		width: 644px;
+	}
+}
