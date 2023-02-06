@@ -76,6 +76,26 @@
 	var PlanCards = (function () {
 		var cards = document.querySelectorAll('.choose-plan-card-template-module_planCard__1zLoM')
 		var classSelected = 'choose-plan-card-template-module_isSelected__bTfwV'
+		var formPricePlan = document.querySelector('[data-price-type="plan"]')
+		var formPriceTax = document.querySelector('[data-price-type="tax"]')
+		var formPriceTotal = document.querySelector('[data-price-type="total"]')
+		var plans = {
+			'999': {
+				price: '9.99',
+				tax: '1.90',
+				total: '11.89',
+			},
+			'2856': {
+				price: '28.56',
+				tax: '5.43',
+				total: '33.99',
+			},
+			'4284': {
+				price: '42.84',
+				tax: '8.14',
+				total: '50.98',
+			},
+		}
 
 		on(cards, function () {
 			if (this.classList.contains(classSelected)) return
@@ -83,6 +103,10 @@
 				node.classList.remove(classSelected)
 			})
 			this.classList.add(classSelected)
+			var selectedPlan = plans[this.dataset.price] || plans['2856']
+			formPricePlan.textContent = selectedPlan.price
+			formPriceTax.textContent = selectedPlan.tax
+			formPriceTotal.textContent = selectedPlan.total
 		})
 	}())
 
