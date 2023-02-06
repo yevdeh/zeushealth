@@ -1222,3 +1222,71 @@
 	font-size: 14px;
 	line-height: 20px;
 }
+
+.kCRHBT {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.jmfSQl {
+	width: 250px;
+	height: 250px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.cqlNHs {
+	background: transparent;
+	margin: 0px auto;
+	outline: none;
+	overflow: hidden;
+	width: 250px;
+}
+
+.irAYEh {
+	font-size: 16px;
+	line-height: 26px;
+	color: rgb(251, 251, 255);
+	text-align: center;
+	margin-bottom: 20px;
+	font-weight: 600;
+	max-width: 322px;
+}
+
+.dOIAnT {
+	font-size: 14px;
+	text-align: center;
+	line-height: 140%;
+	margin-bottom: 40px;
+	color: rgb(251, 251, 255);
+	max-width: 322px;
+}
+
+.dOIAnT b {
+	color: rgb(85, 204, 242);
+}
+
+.ePEVuJ {
+	z-index: 1;
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+}
+
+.fvuHoh {
+	background: transparent;
+	border: 1px solid;
+	height: 49px;
+	margin: 0px;
+}
+
+.YQKlp {
+	background: rgb(251, 251, 255);
+	color: rgb(106, 58, 162);
+	margin: 0px 0px 0px 10px;
+	height: 49px;
+}
