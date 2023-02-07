@@ -440,6 +440,11 @@
 	font-family: Roboto, Helvetica, Arial, sans-serif;
 }
 
+.ceHrsg .MuiStepIcon-root.Mui-completed {
+	color: rgb(86, 204, 242);
+	border: none;
+}
+
 .ceHrsg .MuiStepIcon-text {
 	fill: rgb(86, 204, 242);
 }
@@ -1264,6 +1269,11 @@
 	max-width: 322px;
 }
 
+.irAYEh b {
+	font-weight: 600;
+	color: rgb(187, 108, 217);
+}
+
 .dOIAnT {
 	font-size: 14px;
 	text-align: center;
@@ -1369,4 +1379,54 @@
 	margin: 0px 0px 0px 10px;
 	height: 49px;
 	border-radius: 16px;
+}
+
+.YsKoO {
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.eJFUKp {
+	font-weight: 600;
+	font-size: 14px;
+	text-align: center;
+	color: rgb(187, 107, 217);
+	margin-top: 5px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+.ilneTN {
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+}
+
+.gmPlYm {
+	font-size: 14px;
+	text-align: center;
+	line-height: 140%;
+	margin-bottom: 40px;
+	color: rgb(251, 251, 255);
+}
+
+.lhAtSz {
+	margin-bottom: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 250px;
+	height: 250px;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
 }
