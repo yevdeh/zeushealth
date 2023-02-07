@@ -1430,3 +1430,117 @@
 	-webkit-box-align: center;
 	align-items: center;
 }
+
+.eIaMQF {
+	-webkit-box-flex: 1;
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	-webkit-box-align: center;
+	align-items: center;
+	z-index: 1;
+	padding-top: 96px;
+}
+
+.gywzLB {
+	font-size: 18px;
+	min-height: 56px;
+	margin-bottom: 10px;
+	max-width: 330px;
+	line-height: 28px;
+}
+
+.hcwlYa {
+	width: 330px;
+}
+
+.jbKeDd {
+	display: flex;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	color: rgb(142, 140, 240);
+	margin-bottom: 15px;
+}
+
+.fhqkFZ {
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 120%;
+}
+
+.DjHWs.DjHWs {
+	border-radius: 10px;
+	height: 8px;
+	margin-bottom: 30px;
+	background-color: rgb(230, 230, 230);
+}
+
+.DjHWs .MuiLinearProgress-barColorPrimary {
+	background: rgb(142, 140, 240);
+}
+
+.kIRWST {
+	color: rgb(86, 204, 242);
+}
+
+.kzuA-Dw {
+	color: rgb(187, 107, 217);
+}
+
+.fZZuWk.fZZuWk {
+	background-color: rgb(230, 230, 230);
+}
+
+.fZZuWk .MuiLinearProgress-barColorPrimary {
+	background: rgb(86, 204, 242);
+}
+
+.cQDYmB.cQDYmB {
+	background-color: rgb(230, 230, 230);
+}
+
+.cQDYmB .MuiLinearProgress-barColorPrimary {
+	background: rgb(187, 107, 217);
+}
+
+.boSFNg {
+	display: flex;
+	width: 82px;
+	-webkit-box-pack: justify;
+	justify-content: space-between;
+	-webkit-box-align: center;
+	align-items: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+}
+
+.chMTSR {
+	width: 8px;
+	height: 8px;
+	background: rgb(236, 200, 188);
+	border-radius: 50%;
+}
+
+.cpMoZJ {
+	color: rgb(142, 140, 240);
+	width: 16px;
+	height: 12px;
+}
+
+.bmKCbi {
+	color: rgb(86, 204, 242);
+}
+
+.cuRKWE {
+	color: rgb(187, 107, 217);
+}
+
+.Yyltn {
+	text-align: center;
+	font-size: 14px;
+	line-height: 140%;
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
