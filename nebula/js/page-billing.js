@@ -37,6 +37,6 @@
 	on(options, handleOptionClick)
 	button.addEventListener('click', function () {
 		if (!isButtonEnabled) return
-		window.location.href = '/checkout.html'
+		window.location.href = '/product-overview.html'
 	})
 }())
