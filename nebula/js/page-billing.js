@@ -8,6 +8,8 @@
 	var classOptionNotSelected = 'fJCiSe'
 	var classOptionSelected = 'ekgrCC'
 
+	var selectedPrice = '13.67'
+
 	// addEventListener for multiple elements
 	function on(nodes, callback, event) {
 		for (var i = 0, l = nodes.length; i < l; i++) {
@@ -21,6 +23,7 @@
 			if (option === currentOption) {
 				option.classList.remove(classOptionNotSelected)
 				option.classList.add(classOptionSelected)
+				selectedPrice = currentOption.dataset.price
 			} else {
 				option.classList.remove(classOptionSelected)
 				option.classList.add(classOptionNotSelected)
@@ -37,6 +40,6 @@
 	on(options, handleOptionClick)
 	button.addEventListener('click', function () {
 		if (!isButtonEnabled) return
-		window.location.href = '/product-overview.html'
+		window.location.href = '/product-overview.html?price=' + selectedPrice
 	})
 }())
