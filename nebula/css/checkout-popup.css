@@ -1,0 +1,379 @@
+.Button {
+	background: linear-gradient(165.54deg, rgb(20, 19, 51) -33.39%, rgb(32, 34, 97) 15.89%, rgb(84, 60, 151) 55.84%, rgb(105, 57, 162) 74.96%);
+	border-radius: 40px;
+	box-shadow: 5px 5px 15px rgba(3, 3, 19, 0.25);
+	color: #fff;
+	cursor: pointer;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 140%;
+	padding: 17px;
+	width: 100%;
+}
+
+.Button--disabled {
+	cursor: not-allowed;
+	opacity: 0.5;
+}
+
+.ErrorPopup {
+	align-items: center;
+	display: flex;
+	font-family: 'Rubik', sans-serif;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 210;
+}
+
+.ErrorPopup-button {
+	margin-top: auto;
+	max-width: 100%;
+	width: 343px;
+}
+
+.ErrorPopup--hidden {
+	display: none;
+}
+
+.ErrorPopup-close {
+	bottom: calc(100% + 20px);
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+}
+
+/*
+570 (popup height)
++ 24 (close icon height)
++ 20 (distance between popup and close icon)
++ 10 (distance between window top and close icon)
++ 24 + 20 + 10 (the same for the popup's bottom)
+= 678
+*/
+@media(max-height: 678px) {
+	.ErrorPopup-close {
+		bottom: initial;
+		right: 20px;
+		top: 20px;
+	}
+}
+
+.ErrorPopup-description {
+	font-size: 16px;
+	line-height: 150%;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.ErrorPopup-image {
+	margin-bottom: 10px;
+	max-width: 100%;
+	width: 320px;
+}
+
+@media(max-height: 590px) {
+	.ErrorPopup-image {
+		width: calc(80vh * 320/590);
+	}
+}
+
+.ErrorPopup-shadow {
+	background: #121429;
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.ErrorPopup-title {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 120%;
+	margin-bottom: 10px;
+}
+
+.ErrorPopup-window {
+	align-items: center;
+	background: rgb(255, 240, 240);
+	border-radius: 40px;
+	box-shadow: 5px 5px 25px rgba(3, 3, 19, 0.5);
+	color: rgb(51, 51, 51);
+	display: flex;
+	flex-direction: column;
+	height: 570px;
+	padding: 20px;
+	position: relative;
+	width: calc(100% - 20px);
+}
+
+.ErrorPopup-window::-webkit-scrollbar,
+.ErrorPopup-window::-webkit-scrollbar-corner,
+.ErrorPopup-window::-webkit-scrollbar-thumb,
+.ErrorPopup-window::-webkit-scrollbar-track,
+.ErrorPopup-window:hover::-webkit-scrollbar-thumb {
+	display: none;
+	scrollbar-width: none;
+}
+
+@media(max-height: 590px) {
+	.ErrorPopup-window {
+		height: calc(100% - 20px);
+		overflow: scroll;
+	}
+}
+
+@media(min-width: 820px) {
+	.ErrorPopup-window {
+		width: 800px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.ErrorPopup-window {
+		padding: 50px 40px;
+	}
+}
+
+.Form-button {
+	margin-top: 30px;
+}
+
+.Form-field {
+	width: 100%;
+}
+
+.Form-fieldLabel {
+	font-size: 12px;
+	height: 15px;
+	line-height: 120%;
+	margin-bottom: 5px;
+	padding-left: 16px;
+}
+
+.Form-field--halfWidth {
+	width: calc(50% - 5px);
+}
+
+.Form-input {
+	background: rgb(234, 238, 247);
+	border: 0.5px solid transparent;
+	border-radius: 10px;
+	color: rgb(51, 51, 51);
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 24px;
+	padding: 17px 50px 17px 16px;
+	width: 100%;
+}
+
+.Form-input:focus {
+	border-color: rgb(51, 51, 51);
+	outline: none;
+}
+
+.Form-input:valid {
+	background-image: url(/img/checkbox.svg);
+	background-position: calc(100% - 16px) 17px;
+	background-repeat: no-repeat;
+}
+
+.Form-row {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.Form-row:last-of-type {
+	margin: 0;
+}
+
+.Order-item {
+	display: flex;
+	justify-content: space-between;
+}
+
+.Order-itemPrice {
+	margin-left: 20px;
+}
+
+.Order-items {
+	border-bottom: 0.5px solid #6d6f88;
+	font-size: 14px;
+	line-height: 120%;
+	margin-bottom: 53px;
+	padding-bottom: 53px;
+}
+
+.Order-title {
+	font-size: 24px;
+	font-weight: 500;
+	line-height: 118%;
+	margin-bottom: 40px;
+}
+
+.Order-total {
+	display: flex;
+	font-size: 18px;
+	font-weight: 500;
+	justify-content: space-between;
+	line-height: 140%;
+}
+
+.Order-totalPrice {
+	margin-left: 20px;
+}
+
+.Popup {
+	align-items: center;
+	display: flex;
+	font-family: 'Rubik', sans-serif;
+	height: 100%;
+	justify-content: center;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 210;
+}
+
+.Popup--hidden {
+	display: none;
+}
+
+.Popup-close {
+	bottom: calc(100% + 20px);
+	cursor: pointer;
+	position: absolute;
+	right: 0;
+}
+
+/*
+440 (popup height)
++ 24 (close icon height)
++ 20 (distance between popup and close icon)
++ 10 (distance between window top and close icon)
++ 24 + 20 + 10 (the same for the popup's bottom)
+= 548
+*/
+@media(max-height: 548px) {
+	.Popup-close {
+		bottom: initial;
+		right: 20px;
+		top: 20px;
+	}
+}
+
+.Popup-column {
+	flex: 1;
+}
+
+.Popup-column:first-child {
+	border-right: 0.5px solid #6d6f88;
+	padding-right: 30px;
+}
+
+.Popup-column:last-child {
+	padding-left: 30px;
+}
+
+.Popup-columns {
+	display: flex;
+}
+
+.Popup-shadow {
+	background: #121429;
+	cursor: pointer;
+	height: 100%;
+	left: 0;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.Popup-title {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 120%;
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.Popup-window {
+	background: rgb(255, 240, 240);
+	border-radius: 40px;
+	box-shadow: 5px 5px 25px rgba(3, 3, 19, 0.5);
+	color: rgb(51, 51, 51);
+	height: 440px;
+	padding: 20px;
+	position: relative;
+	width: calc(100% - 20px);
+}
+
+.Popup-window::-webkit-scrollbar,
+.Popup-window::-webkit-scrollbar-corner,
+.Popup-window::-webkit-scrollbar-thumb,
+.Popup-window::-webkit-scrollbar-track,
+.Popup-window:hover::-webkit-scrollbar-thumb {
+	display: none;
+	scrollbar-width: none;
+}
+
+@media(max-height: 460px) {
+	.Popup-window {
+		height: calc(100% - 20px) !important;
+		overflow: scroll;
+	}
+}
+
+@media(max-width: 750px) {
+	.Order-items {
+		margin-bottom: 20px;
+		padding-bottom: 20px;
+	}
+
+	.Order-title {
+		margin-bottom: 20px;
+	}
+
+	.Popup-columns {
+		flex-direction: column;
+	}
+
+	.Popup-column:first-child {
+		border: none;
+		padding: 0;
+	}
+
+	.Popup-column:last-child {
+		padding: 0;
+	}
+
+	.Popup-title {
+		margin-bottom: 20px;
+	}
+
+	.Popup-window {
+		height: auto;
+		overflow: scroll;
+	}
+}
+
+@media(min-width: 820px) {
+	.Popup-window {
+		width: 800px;
+	}
+}
+
+@media (min-width: 1024px) {
+	.Popup-window {
+		padding: 50px 40px;
+	}
+}

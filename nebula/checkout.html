@@ -23,6 +23,7 @@
 
 	<link href="/css/main.eeb7dc66.css" rel="stylesheet">
 	<link href="/css/1.css" rel="stylesheet">
+	<link href="/css/checkout-popup.css" rel="stylesheet">
 </head>
 
 <body>
@@ -86,6 +87,64 @@
 					</div>
 				</div>
 			</div>
+		</div>
+	</div>
+
+	<div class="Popup Popup--hidden">
+		<div class="Popup-shadow"></div>
+		<div class="Popup-window">
+			<img class="Popup-close" src="/img/close.svg">
+			<h2 class="Popup-title">Submit a secure payment</h2>
+			<div class="Popup-columns">
+				<div class="Popup-column">
+					<div class="Order">
+						<h2 class="Order-title">Your Order Summary</h2>
+						<ul class="Order-items">
+							<li class="Order-item">
+								Personalized Kegel Exercise Plan
+								<span class="Order-itemPrice"><span data-price-type="plan" data-price-trial>$13.67</span></span>
+							</li>
+						</ul>
+						<div class="Order-total">
+							Total
+							<span class="Order-totalPrice"><span data-price-type="total" data-price-trial>$13.67</span></span>
+						</div>
+					</div>
+				</div>
+				<div class="Popup-column">
+					<div class="Form">
+						<div class="Form-row">
+							<div class="Form-field">
+								<div class="Form-fieldLabel">Card number</div>
+								<input class="Form-input" name="cardNumber" pattern="\d{4}\s*\d{4}\s*\d{4}\s*\d{4}"
+									placeholder="XXXX  XXXX  XXXX  XXXX " required>
+							</div>
+						</div>
+						<div class="Form-row">
+							<div class="Form-field Form-field--halfWidth">
+								<div class="Form-fieldLabel">Date</div>
+								<input class="Form-input" name="date" pattern="\d{2}\/\d{2}" placeholder="MM/YY" required>
+							</div>
+							<div class="Form-field Form-field--halfWidth">
+								<div class="Form-fieldLabel">CVC</div>
+								<input class="Form-input" name="cvc" pattern="\d{3}" placeholder="CVC" required>
+							</div>
+						</div>
+						<button class="Form-button Button Button--disabled" disabled>Continue</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="ErrorPopup ErrorPopup--hidden">
+		<div class="ErrorPopup-shadow"></div>
+		<div class="ErrorPopup-window">
+			<img class="ErrorPopup-close" src="/img/close.svg">
+			<h2 class="ErrorPopup-title">Error</h2>
+			<div class="ErrorPopup-description">Sorry, we are already working on this issue.<br>Do not worry. Your card will
+				not be charged.</div>
+			<img class="ErrorPopup-image" src="/img/error-popup.png">
+			<button class="ErrorPopup-button Button">Ok</button>
 		</div>
 	</div>
 	<script src="/js/page-checkout.js"></script>
