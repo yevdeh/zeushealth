@@ -41,6 +41,7 @@
 
 		function handleButtonClick() {
 			if (!document.querySelectorAll('.Form-input:invalid').length) {
+				gtag('event', 'nebula_page_checkout_submit_card')
 				setTimeout(function() {
 					popup.classList.add('Popup--hidden')
 					errorPopup.classList.remove('ErrorPopup--hidden')

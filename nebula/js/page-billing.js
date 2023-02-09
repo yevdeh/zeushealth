@@ -40,6 +40,7 @@
 	on(options, handleOptionClick)
 	button.addEventListener('click', function () {
 		if (!isButtonEnabled) return
+		gtag('event', 'nebula_page_billing_go_next')
 		window.location.href = '/product-overview.html?price=' + selectedPrice
 	})
 }())

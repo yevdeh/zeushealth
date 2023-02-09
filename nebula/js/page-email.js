@@ -38,6 +38,7 @@
 	form.addEventListener('submit', function (e) {
 		e.preventDefault()
 		if (validate(input.value)) {
+			gtag('event', 'nebula_page_email_submit_email')
 			window.location.href = '/billing.html'
 		} else {
 			showError()

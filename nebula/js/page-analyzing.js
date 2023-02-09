@@ -62,6 +62,7 @@
 				dot.style.display = 'none'
 				animatedOptionsCount += 1
 				if (animatedOptionsCount === optionsCount) {
+					gtag('event', 'nebula_page_analyzing_go_next')
 					setTimeout(function () {
 						window.location.href = '/email.html'
 					}, 1000);

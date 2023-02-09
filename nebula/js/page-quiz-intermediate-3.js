@@ -43,6 +43,7 @@
 
 	function goToNextPage() {
 		if (isLoaderAnimationFinished && isPercentAnimationFinished) {
+			gtag('event', 'nebula_page_quiz_intermediate_3_go_next')
 			setTimeout(function () {
 				window.location.href = '/quiz-10.html'
 			}, 500);
