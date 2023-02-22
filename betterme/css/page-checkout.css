@@ -10,6 +10,26 @@
 	color: #6d6f88;
 }
 
+.ButtonGreen {
+	animation: ButtonGreen 1.25s cubic-bezier(.66, 0, 0, 1) infinite;
+	background: #02b57f;
+	border-radius: 15px;
+	box-shadow: 0 0 0 0 var(--secondaryButtonShadowColor);
+	color: #fff;
+	cursor: pointer;
+	font-weight: 700;
+	letter-spacing: .007em;
+	line-height: 120%;
+	padding: 17px;
+	width: 100%;
+}
+
+@keyframes ButtonGreen {
+	to {
+		box-shadow: 0 0 0 20px #0000
+	}
+}
+
 .ButtonOrange {
 	background: linear-gradient(264.94deg, #FB2724 4.56%, #F86D41 96.51%);
 	border-radius: 40px;
@@ -26,6 +46,164 @@
 .ButtonOrange--disabled {
 	background: #6d6f88;
 	cursor: not-allowed;
+}
+
+.ChoosePlan {
+	color: #fff;
+}
+
+.ChoosePlan-button {
+	display: block;
+	margin: 0 auto 45px;
+	max-width: 353px;
+}
+
+.ChoosePlan-description {
+	font-size: 14px;
+	line-height: 1.2;
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.ChoosePlan-plan {
+	background: #323747;
+	border: 1px solid #50647c;
+	border-radius: 15px;
+	color: inherit;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 120%;
+	margin-right: 10px;
+	padding: 15px;
+}
+
+.ChoosePlan-plan--active {
+	background: #02b57f;
+	border-color: #02b57f;
+	cursor: initial;
+}
+
+.ChoosePlan-plan:last-of-type {
+	flex-grow: 1;
+	margin: 0;
+	position: relative;
+}
+
+.ChoosePlan-planLabel {
+	background: url(/img/page-checkout/lightning.svg) calc(100% - 8px) center no-repeat #ff4b4b;
+	border-radius: 10px;
+	box-shadow: 2px 2px 10px rgba(3, 3, 19, 0.1);
+	font-size: 12px;
+	font-weight: 500;
+	line-height: 120%;
+	padding: 2px 20px 2px 8px;
+	position: absolute;
+	right: 5px;
+	top: -5px;
+}
+
+.ChoosePlan-plans {
+	display: flex;
+	margin: 0 auto 23px;
+	max-width: 353px;
+}
+
+.ChoosePlan-plansNote {
+	border: 1px solid #ff4b4b;
+	border-radius: 10px;
+	font-size: 14px;
+	line-height: 120%;
+	margin: 0 auto 40px;
+	max-width: 353px;
+	padding: 15px 25px;
+	position: relative;
+	text-align: center;
+}
+
+.ChoosePlan-plansNote::before {
+	background: rgb(20, 20, 24);
+	border: 1px solid #ff4b4b;
+	border-bottom: 0;
+	border-right: 0;
+	content: '';
+	height: 12px;
+	position: absolute;
+	right: 70px;
+	top: -7px;
+	transform: rotate(45deg);
+	width: 12px
+}
+
+.ChoosePlan-safeCheckout {
+	margin: 0 auto;
+	max-width: 500px;
+}
+
+.ChoosePlan-safeCheckoutImage {
+	width: 100%;
+}
+
+.ChoosePlan-safeCheckoutInner {
+	border: 1px solid var(--neutral300Color);
+	border-radius: 10px;
+	padding: 27px 18px 19px;
+	position: relative;
+}
+
+.ChoosePlan-safeCheckoutTitle {
+	background-color: var(--background1Color);
+	font-size: 18px;
+	left: 50%;
+	padding: 0 13px;
+	position: absolute;
+	top: -10px;
+	transform: translateX(-50%);
+	white-space: nowrap;
+}
+
+.ChoosePlan-title {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 1.2;
+	margin-bottom: 16px;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.ChoosePlan {
+		border: 1px solid #6b7c94;
+		border-radius: 20px;
+		padding: 60px 86px;
+	}
+
+	.ChoosePlan-button {
+		margin-bottom: 65px;
+	}
+
+	.ChoosePlan-description {
+		font-size: 18px;
+		margin-bottom: 45px;
+	}
+
+	.ChoosePlan-plan {
+		font-size: 24px;
+		padding: 19px;
+	}
+
+	.ChoosePlan-plansNote::before {
+		right: 55px;
+	}
+
+	.ChoosePlan-safeCheckoutTitle {
+		font-size: 27px;
+		top: -15px;
+	}
+
+	.ChoosePlan-title {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
 }
 
 .ErrorPopup {
