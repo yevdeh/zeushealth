@@ -10,7 +10,7 @@
 	color: #6d6f88;
 }
 
-.Button {
+.ButtonOrange {
 	background: linear-gradient(264.94deg, #FB2724 4.56%, #F86D41 96.51%);
 	border-radius: 40px;
 	box-shadow: 5px 5px 15px rgba(3, 3, 19, 0.25);
@@ -23,7 +23,7 @@
 	width: 100%;
 }
 
-.Button--disabled {
+.ButtonOrange--disabled {
 	background: #6d6f88;
 	cursor: not-allowed;
 }
