@@ -45,9 +45,9 @@
 				this.value += '/'
 			}
 			if (this.checkValidity() && !document.querySelectorAll('.Form-input:invalid').length) {
-				button.classList.remove('Button--disabled')
+				button.classList.remove('ButtonOrange--disabled')
 			} else {
-				button.classList.add('Button--disabled')
+				button.classList.add('ButtonOrange--disabled')
 			}
 		}, 'input')
 	}())
