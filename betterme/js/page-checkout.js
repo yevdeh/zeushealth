@@ -74,39 +74,20 @@
 	}())
 
 	var PlanCards = (function () {
-		var cards = document.querySelectorAll('.choose-plan-card-template-module_planCard__1zLoM')
-		var classSelected = 'choose-plan-card-template-module_isSelected__bTfwV'
-		var formPricePlan = document.querySelector('[data-price-type="plan"]')
-		var formPriceTax = document.querySelector('[data-price-type="tax"]')
-		var formPriceTotal = document.querySelector('[data-price-type="total"]')
-		var plans = {
-			'999': {
-				price: '9.99',
-				tax: '1.90',
-				total: '11.89',
-			},
-			'2856': {
-				price: '28.56',
-				tax: '5.43',
-				total: '33.99',
-			},
-			'4284': {
-				price: '42.84',
-				tax: '8.14',
-				total: '50.98',
-			},
-		}
+		var buttons = document.querySelectorAll('.ChoosePlan-plan')
+		var classButtonActive = 'ChoosePlan-plan--active'
+		var popupPriceNodes = document.querySelectorAll('[data-popup-price]')
 
-		on(cards, function () {
-			if (this.classList.contains(classSelected)) return
-			cards.forEach(function (node) {
-				node.classList.remove(classSelected)
+		on(buttons, function () {
+			if (this.classList.contains(classButtonActive)) return
+			buttons.forEach(function (node) {
+				node.classList.remove(classButtonActive)
 			})
-			this.classList.add(classSelected)
-			var selectedPlan = plans[this.dataset.price] || plans['2856']
-			formPricePlan.textContent = selectedPlan.price
-			formPriceTax.textContent = selectedPlan.tax
-			formPriceTotal.textContent = selectedPlan.total
+			this.classList.add(classButtonActive)
+			var selectedPlan = this.dataset.planPrice || '$13.67'
+			popupPriceNodes.forEach(function (node) {
+				node.textContent = selectedPlan
+			})
 		})
 	}())
 
