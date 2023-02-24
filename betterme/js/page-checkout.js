@@ -111,7 +111,7 @@
 	}())
 
 	var Popup = (function () {
-		var buttons = document.querySelectorAll('[data-button="checkout-get-plan"]')
+		var buttons = document.querySelectorAll('[data-button="get-plan"]')
 		var closeAndShadow = document.querySelectorAll('.Popup-close, .Popup-shadow')
 		var popup = document.querySelector('.Popup')
 
