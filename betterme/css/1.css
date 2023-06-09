@@ -2,6 +2,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+.hidden {
+	display: none;
+}
+
 .button-module_pulsing__2XkYM,
 .pulsing-button-ui_buttonUI__WbV8X {
 	display: inline-block;
