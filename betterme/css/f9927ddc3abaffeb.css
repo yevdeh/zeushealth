@@ -1561,7 +1561,7 @@ button {
 }
 
 .rating-box-module_star__hLXGJ {
-	background-image: url(/img/page-checkout/star.svg);
+	background-image: url(../img/page-checkout/star.svg);
 	background-repeat: no-repeat;
 	display: block;
 	height: 24px;
@@ -1849,7 +1849,7 @@ button {
 
 .faq-accordion-module_faqQuestion__3s0cN:before {
 	background-color: var(--primary400Color);
-	background-image: url(/img/page-checkout/question-white.svg);
+	background-image: url(../img/page-checkout/question-white.svg);
 	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: 12px 16px;
@@ -2912,7 +2912,7 @@ button {
 }
 
 .email-page-module_legalText__QQv-l:before {
-	background-image: url(/img/page-email/Vector_by0kvd.svg);
+	background-image: url(../img/page-email/Vector_by0kvd.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";
@@ -3016,7 +3016,7 @@ button {
 }
 
 .email-form-module_legalText__HDdFS:before {
-	background-image: url(/img/page-email/Vector_by0kvd.svg);
+	background-image: url(../img/page-email/Vector_by0kvd.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: "";

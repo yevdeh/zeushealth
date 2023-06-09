@@ -295,7 +295,7 @@
 	left: 4px;
 	width: 12px;
 	height: 10px;
-	background-image: url(/img/checkmark-white.svg);
+	background-image: url(../img/checkmark-white.svg);
 	background-repeat: no-repeat;
 	background-size: contain;
 	content: ""

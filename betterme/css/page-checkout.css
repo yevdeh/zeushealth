@@ -91,7 +91,7 @@
 }
 
 .ChoosePlan-planLabel {
-	background: url(/img/page-checkout/lightning.svg) calc(100% - 8px) center no-repeat #ff4b4b;
+	background: url(../img/page-checkout/lightning.svg) calc(100% - 8px) center no-repeat #ff4b4b;
 	border-radius: 10px;
 	box-shadow: 2px 2px 10px rgba(3, 3, 19, 0.1);
 	font-size: 12px;
@@ -371,7 +371,7 @@
 }
 
 .Form-input:valid {
-	background-image: url(/img/checkbox.svg);
+	background-image: url(../img/checkbox.svg);
 	background-position: calc(100% - 16px) 17px;
 	background-repeat: no-repeat;
 }
