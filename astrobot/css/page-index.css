@@ -1,0 +1,217 @@
+@font-face {
+	font-family: 'Space Age';
+	src: url(/fonts/Space-Age.otf);
+}
+.Benefits {
+	margin-bottom: 25px;
+	padding: 0 30px;
+}
+.Benefit {
+	color: #181b3e;
+	font-size: 14px;
+	line-height: 140%;
+	padding-left: 30px;
+	position: relative;
+}
+.Benefit::before {
+	background: url(/img/star.svg) center/contain no-repeat;
+	content: '';
+	height: 15px;
+	left: 0;
+	position: absolute;
+	top: 2px;
+	width: 15px;
+}
+.Benefit:not(:last-of-type) {
+	margin-bottom: 3px;
+}
+.Description {
+	line-height: 140%;
+	margin-bottom: 25px;
+	text-align: center;
+}
+.Description br {
+	display: none;
+}
+.Email {
+	color: #030411;
+	font-family: Orbitron, sans-serif;
+	font-size: 12px;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	line-height: 130%;
+	text-align: center;
+}
+.LogoAndName {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+.LogoAndName-description {
+	display: none;
+}
+.LogoAndName-logo {
+	margin-right: 20px;
+	width: 50px;
+}
+.LogoAndName-name {
+	font-family: 'Space Age', sans-serif;
+	font-size: 30px;
+}
+.Preview {
+	margin-bottom: 25px;
+	position: relative;
+	width: 250px;
+}
+.Preview::before {
+	background: url(/img/sphere-mobile-small-2x.png) center/contain no-repeat;
+	content: '';
+	height: 85px;
+	left: -63px;
+	position: absolute;
+	top: -12px;
+	width: 78px;
+}
+.Preview::after {
+	background: url(/img/sphere-mobile-big-2x.png) center/contain no-repeat;
+	bottom: -60px;
+	content: '';
+	height: 240px;
+	position: absolute;
+	right: -185px;
+	width: 240px;
+}
+.Preview-image {
+	width: 100%;
+}
+.QrCodeAndAppStore {
+	margin-bottom: 15px;
+}
+.QrCodeAndAppStore-appStore {
+	width: 120px;
+}
+.QrCodeAndAppStore-qrCode {
+	display: none;
+}
+.Section {
+	overflow: hidden;
+	padding: 10px 16px;
+}
+.Section-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 450px;
+	width: 100%;
+}
+.Title {
+	color: #0e1331;
+	font-family: Orbitron, sans-serif;
+	font-size: 20px;
+	font-weight: 800;
+	letter-spacing: 0.5px;
+	line-height: 130%;
+	margin-bottom: 10px;
+	text-align: center;
+}
+@media (min-width: 1312px) {
+	.Benefits {
+		margin: 65px 0 0;
+		order: 1;
+		padding: 0 0 0 113px;
+		width: 580px;
+	}
+	.Benefit {
+		font-size: 18px;
+		line-height: 130%;
+	}
+	.Benefit:not(:last-of-type) {
+		margin-bottom: 10px;
+	}
+	.Description {
+		font-size: 24px;
+		margin-bottom: 50px;
+		text-align: left;
+		width: 660px;
+	}
+	.Description br {
+		display: block;
+	}
+	.Email {
+		font-size: 16px;
+		order: 2;
+	}
+	.LogoAndName {
+		justify-content: flex-start;
+		margin-bottom: 50px;
+		order: -2;
+		width: 660px;
+	}
+	.LogoAndName-description {
+		color: #6c6e8b;
+		display: block;
+		font-size: 18px;
+		line-height: 130%;
+	}
+	.LogoAndName-logo {
+		margin-right: 40px;
+		width: 150px;
+	}
+	.LogoAndName-name {
+		font-size: 55px;
+		line-height: 130%;
+	}
+	.Preview {
+		margin-bottom: -423px;
+		order: -1;
+		width: 580px;
+	}
+	.Preview::before {
+		background-image: url(/img/sphere-desktop-small-2x.png);
+		height: 241px;
+		left: 450px;
+		top: 465px;
+		width: 241px;
+	}
+	.Preview::after {
+		background-image: url(/img/sphere-desktop-big-2x.png);
+		bottom: 448px;
+		height: 502px;
+		right: -372px;
+		width: 502px;
+	}
+	.QrCodeAndAppStore {
+		align-items: center;
+		display: flex;
+		margin-bottom: 50px;
+		width: 660px;
+	}
+	.QrCodeAndAppStore-appStore {
+		width: 260px;
+	}
+	.QrCodeAndAppStore-qrCode {
+		display: block;
+		margin-right: 40px;
+		width: 160px;
+	}
+	.Section {
+		padding: 100px 16px;
+	}
+	.Section-wrapper {
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1280px;
+	}
+	.Title {
+		font-size: 45px;
+		font-weight: 700;
+		letter-spacing: 0.45px;
+		margin-bottom: 50px;
+		text-align: left;
+		width: 660px;
+	}
+}
