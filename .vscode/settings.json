@@ -1,4 +1,5 @@
 {
+  "css.format.enable": false,
   "html.format.enable": false,
   "scss.format.enable": false
 }
