@@ -1,0 +1,10 @@
+.Section {
+	padding: 40px 16px;
+}
+@media (min-width: 1312px) {
+	.Section-wrapper {
+		margin: auto;
+		max-width: 1280px;
+		width: 100%;
+	}
+}

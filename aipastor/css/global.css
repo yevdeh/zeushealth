@@ -1,0 +1,22 @@
+:focus {
+	outline: 0;
+}
+body {
+	color: #3b3c44;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	min-width: 320px;
+}
+a {
+	color: #e16c20;
+	transition: color 0.3s;
+}
+a:hover {
+	color: #fc450b;
+}
+img {
+	max-width: 100%;
+}
+li {
+	list-style: none;
+}
