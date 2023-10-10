@@ -1,0 +1,143 @@
+.Benefit {
+	background: url(/img/stars.svg) no-repeat 0/14px;
+	font-size: 14px;
+	padding-left: 19px;
+	position: relative;
+}
+.Benefit-highlight {
+	color: #e16c20;
+	font-weight: 500;
+}
+.Benefit:not(:last-of-type) {
+	margin-bottom: 8px;
+}
+.Benefits {
+	margin-bottom: 25px;
+	padding: 0;
+}
+.BlockBottomLogoAndLinks {
+	align-items: center;
+	display: flex;
+	gap: 20px;
+}
+.BottomLogo {
+	width: 80px;
+}
+.BottomLinks-appStore {
+	width: 120px;
+}
+.BottomLinks-email {
+	color: #232327;
+	font-size: 12px;
+	font-weight: 600;
+	margin-top: 10px;
+}
+.BottomLinks-qr {
+	display: none;
+}
+.Description {
+	margin-bottom: 25px;
+	text-align: center;
+}
+.Logo {
+	display: none;
+}
+.Preview {
+	display: block;
+	margin: 0 auto 25px;
+	width: 265px;
+}
+.Section {
+	padding: 11px 16px;
+}
+.Section-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 550px;
+	width: 100%;
+}
+.Title {
+	color: #232327;
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 15px;
+	text-align: center;
+}
+.Title::first-line {
+	color: #e16c20;
+}
+/* 1312 = 1280 content width + 2*16 paddings */
+@media (min-width: 1312px) {
+	.Benefit {
+		background-size: 20px;
+		font-size: 18px;
+		padding-left: 35px;
+	}
+	.Benefit:not(:last-of-type) {
+		margin-bottom: 10px;
+	}
+	.Benefits {
+		margin: 0;
+		padding-left: 90px;
+	}
+	.BlockLogoAndTitleAndDescription {
+		width: 620px;
+	}
+	.BlockPreviewAndBenefits {
+		margin-bottom: -200px;
+		width: 620px;
+	}
+	.BottomLogo {
+		display: none;
+	}
+	.BottomLinks {
+		align-items: center;
+		display: flex;
+		flex-wrap: wrap;
+		width: 620px;
+	}
+	.BottomLinks-appStore {
+		width: 260px;
+	}
+	.BottomLinks-email {
+		font-size: 20px;
+		margin-top: 50px;
+		width: 100%;
+	}
+	.BottomLinks-qr {
+		display: block;
+		margin-right: 40px;
+		width: 160px;
+	}
+	.Description {
+		font-size: 22px;
+		margin-bottom: 50px;
+		text-align: left;
+	}
+	.Logo {
+		display: block;
+		margin-bottom: 50px;
+		width: 160px;
+	}
+	.Preview {
+		margin-bottom: 40px;
+		width: 100%;
+	}
+	.Section {
+		padding: 100px 16px;
+	}
+	.Section-wrapper {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1280px;
+	}
+	.Title {
+		font-size: 55px;
+		line-height: 1.2;
+		margin-bottom: 40px;
+		text-align: left;
+	}
+}
