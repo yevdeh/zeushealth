@@ -1,0 +1,148 @@
+.Benefit {
+	background: url(/img/list-icon.svg) no-repeat 0/12px;
+	color: #393c59;
+	font-size: 14px;
+	line-height: 1.4;
+	padding-left: 22px;
+}
+.Benefit:not(:last-of-type) {
+	margin-bottom: 5px;
+}
+.Benefits {
+	margin: 30px 0 0;
+	padding: 0;
+}
+.BlockBottomLinks {
+	text-align: center;
+}
+.BlockLogoAndTitleAndDescription {
+	text-align: center;
+}
+.BlockSideLogoAndPreviewAndBenefits {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 55px;
+}
+.BottomLinks-appStore {
+	width: 120px;
+}
+.BottomLinks-email {
+	color: #121429;
+	font-size: 14px;
+	font-weight: 600;
+	margin-top: 15px;
+}
+.BottomLinks-qr {
+	display: none;
+}
+.Description {
+	color: #7d7e8b;
+	margin-bottom: 30px;
+}
+.Description--desktop {
+	display: none;
+}
+.Logo {
+	display: none;
+}
+.Preview {
+	width: calc(100% - 80px);
+}
+.Section {
+	padding: 40px 16px 70px;
+}
+.Section-wrapper {
+	margin: auto;
+	max-width: 550px;
+	width: 100%;
+}
+.SideLogo {
+	width: 80px;
+}
+.Title {
+	font-size: 24px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.Title-highlight {
+	color: #8674f6;
+}
+/* 1312 = 1280 content width + 2*16 paddings */
+@media (min-width: 1312px) {
+	.Benefit {
+		color: #121219;
+		font-size: 18px;
+		font-weight: 600;
+	}
+	.Benefits {
+		margin-top: 20px;
+	}
+	.BlockBottomLinks {
+		align-items: flex-end;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left;
+		width: 630px;
+	}
+	.BlockLogoAndTitleAndDescription {
+		text-align: left;
+		width: 630px;
+	}
+	.BlockSideLogoAndPreviewAndBenefits {
+		display: block;
+		margin-bottom: -200px;
+		width: 615px;
+	}
+	.BottomLinks-appStore {
+		width: 260px;
+	}
+	.BottomLinks-email {
+		font-size: 18px;
+		font-weight: 700;
+		margin-top: 50px;
+		width: 100%;
+	}
+	.BottomLinks-qr {
+		display: block;
+		margin-right: 30px;
+		width: 160px;
+	}
+	.Description {
+		margin-bottom: 50px;
+	}
+	.Description--desktop {
+		display: block;
+		font-size: 24px;
+		font-weight: 600;
+	}
+	.Description--mobile {
+		display: none;
+	}
+	.Logo {
+		display: block;
+		margin-bottom: 50px;
+		width: 160px;
+	}
+	.Preview {
+		width: 600px;
+	}
+	.Section {
+		padding: 150px 16px 117px;
+	}
+	.Section-wrapper {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1280px;
+	}
+	.SideLogo {
+		display: none;
+	}
+	.Title {
+		font-size: 54px;
+		line-height: 1.1;
+		margin-bottom: 50px;
+	}
+}
