@@ -4,15 +4,11 @@
 	padding-left: 19px;
 	position: relative;
 }
-.Benefit-highlight {
-	color: #e16c20;
-	font-weight: 500;
-}
 .Benefit:not(:last-of-type) {
 	margin-bottom: 8px;
 }
 .Benefits {
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 	padding: 0;
 }
 .BlockBottomLogoAndLinks {
@@ -36,7 +32,7 @@
 	display: none;
 }
 .Description {
-	margin-bottom: 25px;
+	margin-bottom: 35px;
 	text-align: center;
 }
 .Logo {
@@ -44,11 +40,11 @@
 }
 .Preview {
 	display: block;
-	margin: 0 auto 25px;
+	margin: 0 auto 35px;
 	width: 265px;
 }
 .Section {
-	padding: 11px 16px;
+	padding: 10px 7px;
 }
 .Section-wrapper {
 	align-items: center;
@@ -78,15 +74,19 @@
 	.Benefit:not(:last-of-type) {
 		margin-bottom: 10px;
 	}
+	.Benefit-highlight {
+		color: #e16c20;
+		font-weight: 500;
+	}
 	.Benefits {
 		margin: 0;
-		padding-left: 90px;
+		padding-left: 135px;
 	}
 	.BlockLogoAndTitleAndDescription {
 		width: 620px;
 	}
 	.BlockPreviewAndBenefits {
-		margin-bottom: -200px;
+		margin-bottom: -170px;
 		width: 620px;
 	}
 	.BottomLogo {
