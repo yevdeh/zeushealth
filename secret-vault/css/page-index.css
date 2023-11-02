@@ -28,12 +28,6 @@
 .BottomLinks-appStore {
 	width: 120px;
 }
-.BottomLinks-email {
-	color: #121429;
-	font-size: 14px;
-	font-weight: 600;
-	margin-top: 15px;
-}
 .BottomLinks-qr {
 	display: none;
 }
@@ -97,12 +91,6 @@
 	}
 	.BottomLinks-appStore {
 		width: 260px;
-	}
-	.BottomLinks-email {
-		font-size: 18px;
-		font-weight: 700;
-		margin-top: 50px;
-		width: 100%;
 	}
 	.BottomLinks-qr {
 		display: block;
