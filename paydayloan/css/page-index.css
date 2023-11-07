@@ -1,0 +1,136 @@
+.Benefit {
+	background: url(/img/list-icon.svg) no-repeat 0/16px;
+	font-size: 14px;
+	line-height: 1.4;
+	padding-left: 26px;
+}
+.Benefit:not(:last-of-type) {
+	margin-bottom: 5px;
+}
+.Benefits {
+	margin-bottom: 16px;
+	padding-left: 30px;
+}
+.BlockLogoAndTitle {
+	align-items: flex-start;
+	display: flex;
+	gap: 10px;
+	margin-bottom: 10px;
+	max-width: 350px;
+}
+.BottomLinks {
+	text-align: center;
+}
+.BottomLinks-appStore {
+	width: 120px;
+}
+.BottomLinks-email {
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 16px;
+}
+.BottomLinks-qr {
+	display: none;
+}
+.Description {
+	color: #7d7e8b;
+	font-size: 14px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+.Logo {
+	width: 104px;
+}
+.Preview {
+	width: 343px;
+}
+.Section {
+	padding: 16px 16px 33px;
+}
+.Section-wrapper {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	max-width: 550px;
+	width: 100%;
+}
+.Title {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0;
+}
+.Title-highlight {
+	color: #47af3e;
+}
+/* 1312 = 1280 content width + 2*16 paddings */
+@media (min-width: 1312px) {
+	.Benefit {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 1.3;
+	}
+	.Benefits {
+		margin: 0;
+		padding: 0;
+	}
+	.BlockLogoAndTitle {
+		display: block;
+		margin-bottom: 50px;
+		max-width: initial;
+		width: 660px;
+	}
+	.BlockPreviewAndBenefits {
+		margin: -390px 0 -200px;
+		width: 600px;
+	}
+	.BottomLinks {
+		align-items: flex-end;
+		display: flex;
+		flex-wrap: wrap;
+		text-align: left;
+		width: 660px;
+	}
+	.BottomLinks-appStore {
+		width: 260px;
+	}
+	.BottomLinks-email {
+		font-size: 18px;
+		margin-top: 94px;
+		width: 100%;
+	}
+	.BottomLinks-qr {
+		display: block;
+		margin-right: 30px;
+		width: 160px;
+	}
+	.Description {
+		font-size: 24px;
+		font-weight: 600;
+		margin-bottom: 50px;
+		text-align: left;
+		width: 660px;
+	}
+	.Logo {
+		margin-bottom: 50px;
+		width: 160px;
+	}
+	.Preview {
+		margin-bottom: 20px;
+		width: 100%;
+	}
+	.Section {
+		padding: 150px 16px 118px;
+	}
+	.Section-wrapper {
+		align-items: flex-start;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 1280px;
+	}
+	.Title {
+		font-size: 40px;
+		line-height: 1.1;
+	}
+}
