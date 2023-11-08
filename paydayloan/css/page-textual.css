@@ -1,0 +1,88 @@
+.Content {
+	font-size: 16px;
+	letter-spacing: -0.24px;
+}
+.Content h2 {
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+.Content p {
+	color: #3c3c3c;
+	line-height: 1.18;
+	margin-bottom: 20px;
+}
+.Logo {
+	display: none;
+}
+.Section {
+	background: #f2f4f6;
+	font-family: 'Inter', sans-serif;
+	line-height: normal;
+	padding: 16px;
+}
+.TitleBlock {
+	margin-bottom: 12px;
+	position: relative;
+}
+.TitleBlock-date {
+	color: #8a8b8c;
+	font-weight: 500;
+	letter-spacing: -0.24px;
+}
+.TitleBlock-homeLink {
+	background: url(/img/arrow.svg) 0/cover no-repeat;
+	height: 24px;
+	position: absolute;
+	top: 2px;
+	width: 24px;
+}
+.TitleBlock-title {
+	font-size: 22px;
+	font-weight: 600;
+	margin-bottom: 24px;
+	text-align: center;
+}
+@media (min-width: 1312px) {
+	.Content h2 {
+		color: #47af3e;
+		font-size: 22px;
+	}
+	.Content p {
+		margin-bottom: 22px;
+	}
+	.Logo {
+		align-items: center;
+		display: flex;
+		gap: 30px;
+		margin-bottom: 90px;
+	}
+	.Logo-image {
+		width: 60px;
+	}
+	.Logo-text {
+		color: #47af3e;
+		font: 700 24px/1.1 'Nunito Sans', sans-serif;
+	}
+	.Section {
+		background: #fff;
+		padding: 40px 16px 77px;
+	}
+	.Section-wrapper {
+		margin: auto;
+		width: 1280px;
+	}
+	.TitleBlock {
+		margin-bottom: 36px;
+	}
+	.TitleBlock-date {
+		font-weight: 600;
+	}
+	.TitleBlock-homeLink {
+		display: none;
+	}
+	.TitleBlock-title {
+		font: 700 40px/1.1 'Nunito Sans', sans-serif;
+		margin-bottom: 12px;
+		text-align: left;
+	}
+}
