@@ -59,6 +59,9 @@
 		gap: 30px;
 		margin-bottom: 90px;
 	}
+	.Logo:hover {
+		text-decoration: none;
+	}
 	.Logo-image {
 		width: 60px;
 	}
